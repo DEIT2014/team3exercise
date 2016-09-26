@@ -55,6 +55,72 @@
 
    
 # 3. dart函数定义和使用方法
+     1.定义函数
+     *函数的定义：
+     语法：
+     function funcName ([parameters]){
+    statements;
+    [return表达式;]
+    }
+
+     *Function可省略，定义方法如下：
+     String funcName(String name){ 
+       return 'hello $name';
+     }
+     *因为 Dart 中的类型是可选的，所以这样写也可以：
+     funcName(name){
+     return 'hello $name';
+    }
+
+
+      2.函数的使用
+      不仅可以定义一个有名字的函数，还可以使用匿名函数、把函数作为参数传递给其它函数、把函数赋值给一个变量、返回一个函数等。
+
+      *函数的调用：
+     funcName(参数);
+     不仅可以定义一个有名字的函数，还可以使用匿名函数、把函数作为参数传递给其它函数、把函数赋值给一个变量、返回一个函数等。
+     使用匿名函数
+     main() {
+       var sayHello = (name) => 'hello $name'; // 把一个匿名函数赋值给变量
+       sayHello('Guokai'); // 利用该变量调用函数
+     }
+     *把函数作为参数传递给其它函数
+
+     *函数也是对象，所有的函数都是 Function 类型的对象。
+    sayHello(name) => 'hello $name';
+    assert(sayHello is Function);
+
+     *函数闭包可以记住所在词法作用域内的变量的值。
+     /// 返回一个对参数加 n 的函数
+     Function makeAdder(num n) {
+       return (num i) => n + i;
+    }
+
+     main() {
+       var add2 = makeAdder(2); // 对参数加 2 的函数
+       var add4 = makeAdder(4); // 对参数加 4 的函数
+
+       assert(add2(3) == 5);
+       assert(add4(3) == 7);
+     }
+
+
+     *可以使用 typedef 关键字定义函数的类型，也就是一个别名，类型信息包含函数的参数和返回值类型。
+     typedef int Compare(int a, int b);
+      int sort(int a, int b) => a - b;
+
+     main() {
+       assert(sort is Function);
+       assert(sort is Compare);
+     }
+
+     *在任何代码块中都可以嵌入函数。
+     foo(x, y){
+       bar(m){
+    
+      }
+       bar(x+y);
+        }
 
 # 4. dart中数组定义和使用方法
     1.在Dart中数组也叫列表list.
@@ -120,6 +186,20 @@
    ```
     
 # 6.dart中 Map定义和使用方法
+    Map的定义
+    *定义一个叫options的Map变量：
+     var options={
+     ‘color’:’red’,
+     ‘number’:2
+     };
+     *Map的使用方法
+     用方括号从Map中获取值：
+     var options={
+     ‘color’:’red’,
+     ‘number’:2
+     };
+     options[‘number’];
+
 # 7. querySelector（）函数的详细API解释
  ```dart
  例子代码：
@@ -178,6 +258,7 @@ document.querySelectorAll("p[class=hot][name]")
     4. 运行，点击运行按钮，在浏览器中运行。
     
 # 9. dart web app 应用程序组织结构的解释部分
+    https://webdev.dartlang.org/codelabs/ng2
 # 10. dart可用的各种工具的解释部分
 编程语言并不是孤立存在的，Dart也是这样，他由语言规范、虚拟机、类库和工具等组成：
 
@@ -191,3 +272,5 @@ document.querySelectorAll("p[class=hot][name]")
     https://dartlang.org
     在language部分有指引你到其他社区社区寻求dart相关问题帮助的解释部分
 # 12. 从web storm软件菜单找出webstrom 中dart开发的帮助文档
+    https://www.jetbrains.com/help/webstorm/2016.2/dart-support.html?search=dart
+

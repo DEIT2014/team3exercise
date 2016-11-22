@@ -8,8 +8,5 @@ environment:
   sdk: '>=1.9.0 <2.0.0'
 
 dependencies:
-  sqljocky:
-  browser: ^0.10.0
   shelf:
   shelf_route:
-

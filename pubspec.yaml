@@ -10,3 +10,5 @@ environment:
 dependencies:
   shelf:
   shelf_route:
+  route_hierarchical:
+  sqljocky:

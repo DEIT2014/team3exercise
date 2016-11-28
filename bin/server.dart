@@ -1,6 +1,15 @@
 import 'package:shelf/shelf.dart';
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_route/shelf_route.dart';
+import 'package:sqljocky/sqljocky.dart';
+import 'dart:core';
+import 'dart:io';
+import 'dart:convert';
+
+final DATA_FILE="E:\\team3exercise\\bin\\wordquestion.json";
+final _headers={"Access-Control-Allow-Origin":"*",
+  "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+  "Access-Control-Allow-Headers":"Origin, X-Requested-With, Content-Type, Accept"};
 
 void main() {
   var myRouter = router()

@@ -6,10 +6,7 @@ import 'dart:core';
 import 'dart:io';
 import 'dart:convert';
 
-final DATA_FILE="E:\\team3exercise\\bin\\wordquestion.json";
-final _headers={"Access-Control-Allow-Origin":"*",
-  "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
-  "Access-Control-Allow-Headers":"Origin, X-Requested-With, Content-Type, Accept"};
+
 
 void main() {
   var myRouter = router()

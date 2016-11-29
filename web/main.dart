@@ -2,20 +2,22 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'dart:html';
+import 'dart:convert';
 HttpRequest request;
 void main(){
-  querySelector("#btnCLICK").onClick.listen(click);
+  querySelector("#btnPRLB").onClick.listen(click);
 
 }
-void click(MouseEvent e){
-  String url = 'http://localhost:8081/ok/stu';   //?
-  request = new HttpRequest();
-  request.onReadyStateChange.listen(onData);
-  request.open('POST', url);
-  request.send(" your jsonndata");
-}
-void onData(_) {
-  if (request.readyState == HttpRequest.DONE && request.status == 200) {
-    querySelector("#showme").text=request.responseText;
+void click(MouseEvent e) {
+  String questAsJson = '''
+  {"quest":[{"word":"A","time":"2"},{"word":"5","time":"1"}]
   }
+  ''';
+  Map questData = JSON.decode(questAsJson);
+  var QuestList = questData["quest"];
+  var WordData = QuestList[0]["word"];
+
+  querySelector("#QUES").text =WordData.toString();
+
+
 }

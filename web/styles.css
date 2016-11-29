@@ -572,7 +572,11 @@
     left: 900px;
     top: 676px;
 }
-#divQUES {
+#QUES {
+    font-size: 24pt;
+    text-align: center;
+    color:white;
+    line-height:65px;
     background-color: #3C9;
     display: inline-block;
     position: absolute;

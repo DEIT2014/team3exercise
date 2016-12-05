@@ -9,15 +9,18 @@ void main(){
 
 }
 void click(MouseEvent e) {
-  String questAsJson = '''
-  {"quest":[{"word":"A","time":"2"},{"word":"5","time":"1"}]
+  String url = 'http://localhost:8080/quest';
+  request = new HttpRequest();
+  request.onReadyStateChange.listen(onData);
+  request.open('GET', url);
+  request.send();
+
+}
+
+void onData(_) {
+  if (request.readyState == HttpRequest.DONE && request.status == 200){
+    Map questData = JSON.decode(request.responseText);
+    var WordData = questData["Word1"];
+    querySelector("#QUES").text =WordData;
   }
-  ''';
-  Map questData = JSON.decode(questAsJson);
-  var QuestList = questData["quest"];
-  var WordData = QuestList[0]["word"];
-
-  querySelector("#QUES").text =WordData.toString();
-
-
 }

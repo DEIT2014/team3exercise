@@ -1,10 +1,12 @@
-import 'package:shelf/shelf.dart';
-import 'package:shelf/shelf_io.dart' as io;
-import 'package:shelf_route/shelf_route.dart';
-import 'package:sqljocky/sqljocky.dart';
-import 'dart:core';
+import 'dart:async';
 import 'dart:io';
 import 'dart:convert';
+import 'package:sqljocky/sqljocky.dart';
+import 'package:args/args.dart';
+import 'package:shelf/shelf.dart' as shelf;
+import 'package:shelf/shelf_io.dart' as io;
+import 'package:shelf_cors/shelf_cors.dart' as shelf_cors;
+import 'package:shelf_route/shelf_route.dart';
 
 Map<String, String> data = new Map();
 final pool = new ConnectionPool(host: "localhost",
@@ -17,19 +19,12 @@ final pool = new ConnectionPool(host: "localhost",
 //用你自己的数据库替代
     max: 5); //与数据库相连
 
+
 main(List<String> args) async {
-  //可不关注此处代码
-  var parser = new ArgParser()
-    ..addOption('port', abbr: 'p', defaultsTo: '8080');
-  var result = parser.parse(args);
-  var port = int.parse(result['port'], onError: (val) {
-    stdout.writeln('Could not parse port value "$val" into a number.');
-    exit(1);
-  });
 //建立路由
+  int port = 8080;
   var myRouter = router();
-  myRouter.get('/rest', _echoUserName);
-  myRouter.post('/rest', _echoRequest);
+  myRouter.get('/quest', getquest);
   //配置cors参数
   Map <String, String> corsHeader = new Map();
   corsHeader["Access-Control-Allow-Origin"] = "*";
@@ -50,18 +45,39 @@ main(List<String> args) async {
   });
 }
 
+Future<String> getDataFromDb() async {
+  var results = await pool.query('select word from duizhao');
+  int i = 0;
+  results.forEach((row) {
+    //列出所有用户名
+    String index = "Word" + i.toString();
+    data[index] = row.word;
+    i++;
+  });
+  String JsonData = JSON.encode(data);
+  return JsonData;
+}
 
-void main() {
+Future<shelf.Response> getquest(shelf.Request request) async {
+  //从数据库获取数据
+  String questAsJson = await getDataFromDb();
+  return new shelf.Response.ok(
+      '${questAsJson}');
+}
+
+
+/*
+void mai(){
   var myRouter = router()
     ..get('/userinfo',responseUser)
-    //登录
+  //登录
     ..post ('/signup',postUser)
     ..get('/question/twelvetype',responsequestion)
-     //获取题目
+  //获取题目
     ..get('/geterr',responseerr)
-     //获取错题
+  //获取错题
     ..post('/posterr',posterr);
-     //发送错题
+  //发送错题
   io.serve(myRouter.handler,'localhost',8080);
 }
 
@@ -81,3 +97,4 @@ responseUser(request){
 postUser(resquest){
   //todo 注册时发送用户信息
 }
+*/

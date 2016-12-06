@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+
+<link href="swrite.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="panPWS">
+<div class="tab-head">
+<h2 class="btnPWA" id="btnPWA" onclick="changeTab1()" name="btnPRSNA"><div id="slan" onclick="changeTab1()" class="slan">字母</div></h2>
+
+<h2 id="btnPWN" onclick="changeTab2()" class="btnPWN"><div id="uslan" onclick="changeTab2()" class="uslan">数字</div></h2>
+</div>
+
+<!--内容-->
+<div class="tab-content">
+<div id="panPWS1" class="show">
+  <div id="labPWSAS" class="labPWSAS">开始练习吧：</div>
+  <div id="divPWSABY" class="divPWSABY">
+    <div id="labPWAP" class="labPWAP">请翻译如下摩尔斯电码，将结果输入文本框中：</div>
+    <div id="labPWSAR" class="labPWSNR"></div>
+    <input name="textPWSA" type="text" class="textPWSA" id="textPWSA" />
+    <button id="btnPWSAN" class="btnPWSAN">next</button>
+    <button id="btnPWSAB" class="btnPWSAB">back</button>
+    
+  </div>
+</div>
+<div id="panPWS2">
+<div id="panPWS1" class="show">
+  <div id="labPWSAS" class="labPWSAS">开始练习吧：</div>
+  <div id="divPWSABY" class="divPWSABY">
+    <div id="labPWAP" class="labPWAP">请翻译如下摩尔斯电码，将结果输入文本框中：</div>
+    <div id="labPWSAR" class="labPWSAR"></div>
+    <input name="" type="text" class="textPWSA" id="textPWSA" />
+    <button id="btnPWSAN" class="btnPWSAN">next</button>
+    <button id="btnPWSAB" class="btnPWSAB">back</button>
+  </div>
+  </div>
+
+</div>
+</div>
+<script>
+var tab1 = document.getElementById('btnPWA');
+ltab1=document.getElementById('slan');
+tab2 = document.getElementById('btnPWNN');
+ltab2=document.getElementById('uslan');
+c1 = document.getElementById('panPWS1');
+divPWSABY=document.getElementById('divPWSABY');
+labPWAP=document.getElementById('labPWAP');
+labPWSAR=document.getElementById('labPWSAR');
+btnPWSAN=document.getElementById('btnPWSAN');
+btnPWSAB=document.getElementById('btnPWSAB');
+labPWSAS=document.getElementById('labPWSAS');
+c2 = document.getElementById('panPWS2');
+labPWSNR=document.getElementById('labPWSNR');
+
+function changeTab1() {
+tab1.className = 'selected';
+ltab1.className='slan';
+tab2.className = 'unselected';
+ltab2.className='uslan';
+c1.className = 'show';
+divPWSABY.className='divPRSABY';
+labPWAP.className='labPWAP';
+labPWSAR.className='labPWSAR';
+btnPWSAN.className='btnPWSAN';
+btnPWSAB.className='btnPWSAB';
+labPWSAS.className='labPWSAS';
+c2.className = '';
+}
+function changeTab2() {
+tab1.className = 'unselected';
+ltab1.className='uslan';
+tab2.className = 'selected';
+ltab2.className='slan';
+c1.className = '';
+c2.className = 'show';
+divPWSABY.className='divPRSABY';
+labPWAP.className='labPWAP';
+labPWSNR.className='labPWSNR';
+btnPWSAN.className='btnPWSAN';
+btnPWSAB.className='btnPWSAB';
+labPWSAS.className='labPWSAS';
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+
+h2 {
+border-top: solid cornflowerblue 1px;
+border-left: solid cornflowerblue 1px;
+width: 50px;
+height: 25px;
+margin: 0;
+float: left;
+text-align: center;
+}
+.tab-content {
+border: solid cornflowerblue 1px;
+width: 152px;
+height: 100px;
+}
+.tab-content div{
+display: none;
+}
+.selected {
+	background-color: #3C9;
+	position: absolute;
+	height: 70px;
+	width: 250px;
+	color: #3C9;
+}
+#btnPRMAA {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#btnPRMAN {
+	position: absolute;
+	left: 250px;
+	top: 0px;
+}
+#btnPRMAM {
+	position: absolute;
+	left: 500px;
+	top: 0px;
+}
+
+.unselected {
+	background-color: #FFC;
+	position: absolute;
+	height: 70px;
+	width: 250px;
+	color: #FFC;
+}
+
+
+.tab-content .show{
+	display: inline-block;
+	background-color: #3C9;
+	position: absolute;
+	height: 921px;
+	width: 1300px;
+	left: 0px;
+	top: 70px;
+	color: #3C9;
+}
+.tab-content .divPRMAB {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 570px;
+	width: 1000px;
+	left: 150px;
+	top: 175px;
+}
+.tab-content .labPRMAC {
+	font-family: "幼圆";
+	font-size: 30px;
+	font-weight: bold;
+	color: #3C9;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 410px;
+	left: 300px;
+	top: 130px;
+}
+.tab-content .labPRMAR {
+	font-family: "幼圆";
+	font-size: 80px;
+	font-weight: bold;
+	color: #600;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 100px;
+	width: 400px;
+	left: 300px;
+	top: 250px;
+}
+.tab-content .btnPRMANe {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 564px;
+	top: 470px;
+}
+.tab-content .btnPRMAB {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 764px;
+	top: 470px;
+}
+#panPRM {
+	display: inline-block;
+	height: 991px;
+	width: 1300px;
+	left: 125px;
+	top: 0px;
+	position: absolute;
+}
+
+
+
+
+
+
+#labPRMAA {
+	position: absolute;
+	left: 85px;
+	top: 20px;
+}
+.labPRMAA {
+	font-family: "幼圆";
+	font-size: 28px;
+	font-weight: bold;
+	color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 30px;
+	width: 80px;
+}
+#labPRMAN {
+	display: inline-block;
+	position: absolute;
+	left: 85px;
+	top: 20px;
+}
+.labPRMAN {
+	font-family: "幼圆";
+	font-size: 28px;
+	font-weight: bold;
+	color: #3C9;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 30px;
+	width: 80px;
+}
+#labPRMAM {
+	display: inline-block;
+	position: absolute;
+	left: 85px;
+	top: 20px;
+}
+.labPRMAM {
+	font-family: "幼圆";
+	font-size: 28px;
+	font-weight: bold;
+	color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 30px;
+	width: 80px;
+}

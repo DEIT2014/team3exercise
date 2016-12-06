@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+
+<link href="mewrite.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="panPWM">
+<div class="tab-head">
+<h2 id="btnPWMAA" onclick="changeTab1()" class="selected"><div class="labPWMAA" id="labPWMAA" >字母</div></h2>
+<h2 id="btnPWMAN" onclick="changeTab2()" class="unselected"><div id="labPWMAN" class="labPWMAN">数字</div></h2>
+<h2 id="btnPWMAM" onclick="changeTab3()" class="unselected"><div id="labPWMAM"  class="labPWMAM">混合</div></h2>
+</div>
+<div class="tab-content">
+<div id="panPWM1" class="show">
+  <div id="labPWMAP" class="labPWMAP">开始练习吧：</div>
+  <div id="divPWMAB" class="divPWMAB">
+    <div id="labPWMAC" class="labPWMAC">请翻译如下摩尔斯电码，将结果输入文本框中：</div>
+    <div id="labPWMAR" class="labPWMAR"></div>
+    <input name="" type="text" class="textPWMAA" id="textPWMAA" />
+    <button id="btnPWMANe" class="btnPWMANe">next</button>
+    <button id="btnPWMAB" class="btnPWMAB">back</button>
+    
+  </div>
+</div>
+
+<div id="panPWM2">
+  <div id="labPWMNP" class="labPWMNP">开始练习吧：</div>
+  <div id="divPWMNB" class="divPWMNB">
+    <div id="labPWMNC" class="labPWMNC">请翻译如下摩尔斯电码，将结果输入文本框中：</div>
+    <div id="labPWMNR" class="labPWMNR"></div>
+    <input name="" type="text" class="textPWMNA" id="textPWMNA" />
+    <button id="btnPWMNNe" class="btnPWMNNe">next</button>
+    <button id="btnPWMNB" class="btnPWMNB">back</button>
+  </div></div>
+  
+<div id="panPWM3">
+  <div id="labPWMMP" class="labPWMMP">开始练习吧：</div>
+  <div id="divPWMMB" class="divPWMMB">
+    <div id="labPWMMC" class="labPWMMC">请翻译如下摩尔斯电码，将结果输入文本框中：</div>
+    <div id="labPWMMR" class="labPWMMR"></div>
+    <input name="" type="text" class="textPWMMA" id="textPWMMA" />
+    <button id="btnPWMMNe" class="btnPWMMNe">next</button>
+    <button id="btnPWMMB" class="btnPWMMB">back</button>
+     
+  </div></div>
+</div>
+</div>
+<script>
+var tab1 = document.getElementById('btnPWMAA');
+ltab1=document.getElementById('labPWMAA');
+tab2 = document.getElementById('btnPWMAN');
+ltab2=document.getElementById('labPWMAN');
+tab3 = document.getElementById('btnPWMAM');
+ltab3=document.getElementById('labPWMAM');
+divPWMAB=document.getElementById('divPWMAB');
+labPWMAC=document.getElementById('labPWMAC');
+labPWMAR=document.getElementById('labPWMAR');
+btnPWMANe=document.getElementById('btnPWMANe');
+btnPWMAB=document.getElementById('btnPWMAB');
+labPWMAP=document.getElementById('labPWMAP');
+textPWMAA=document.getElementById('textPWMAA');
+c1 = document.getElementById('panPWM1');
+c2 = document.getElementById('panPWM2');
+divPWMNB=document.getElementById('divPWMNB');
+labPWMNC=document.getElementById('labPWMNC');
+labPWMNR=document.getElementById('labPWMNR');
+btnPWMNNe=document.getElementById('btnPWMNNe');
+btnPWMNB=document.getElementById('btnPWMNB');
+labPWMNP=document.getElementById('labPWMNP');
+textPWMNA=document.getElementById('textPWMNA');
+
+c3 = document.getElementById('panPWM3');
+divPRMMB=document.getElementById('divPRMMB');
+labPRMMC=document.getElementById('labPRMMC');
+labPRMMR=document.getElementById('labPRMMR');
+btnPRMMNe=document.getElementById('btnPRMMNe');
+btnPRMMB=document.getElementById('btnPRMMB');
+labPRMMP=document.getElementById('labPRMMP');
+textPWMMA=document.getElementById('textPWMMA');
+
+
+function changeTab1() {
+tab1.className = 'selected';
+ltab1.className='labPWMAA';
+tab2.className = 'unselected';
+ltab2.className='labPWMAN';
+tab3.className = 'unselected';
+ltab3.className='labPWMAM';
+c1.className = 'show'
+c2.className = '';
+c3.className = '';
+divPWMAB.className='divPWMAB';
+labPWMAC.className='labPWMAC';
+labPWMAR.className='labPWMAR';
+btnPWMANe.className='btnPWMANe';
+btnPWMAB.className='btnPWMAB';
+labPWMAP.className='labPWMAP';
+textPWMAA.className='textPWMAA';
+}
+function changeTab2() {
+tab1.className = 'unselected';
+ltab1.className='labPWMAN';
+tab2.className = 'selected';
+ltab2.className='labPWMAA';
+tab3.className = 'unselected';
+ltab3.className='labPWMAM';
+c1.className = '';
+c2.className = 'show';
+c3.className = '';
+divPWMAB.className='divPWMNB';
+labPWMAC.className='labPWMNC';
+labPWMAR.className='labPWMNR';
+btnPWMANe.className='btnPWMNNe';
+btnPWMAB.className='btnPWMNB';
+labPWMAP.className='labPWMNP';
+textPWMAA.className='textPWMNA';
+
+}
+function changeTab3() {
+tab1.className = 'unselected';
+ltab1.className='labPWMAN';
+tab2.className = 'unselected';
+ltab2.className='labPWMAM';
+tab3.className = 'selected';
+ltab3.className='labPWMAA';
+c1.className = ''
+c2.className = '';
+c3.className = 'show';
+divPWMMB.className='divPWMMB';
+labPWMMC.className='labPWMMC';
+labPWMMR.className='labPWMMR';
+btnPWMMNe.className='btnPWMMNe';
+btnPWMMB.className='btnPWMMB';
+labPWMMP.className='labPWMMP';
+textPWMMA.className='textPWMMA';
+
+}
+
+</script>
+</body>
+</html>

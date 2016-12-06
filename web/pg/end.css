@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+#divGBF {
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 921px;
+	width: 1300px;
+	left: 125px;
+	top: 0px;
+}
+#inFBa {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 620px;
+	width: 1000px;
+	left: 150px;
+	top: 140px;
+}
+#labTime {
+	font-family: "Arial Unicode MS";
+	font-size: 36px;
+	color: #000;
+	display: inline-block;
+	position: absolute;
+	height: 40px;
+	width: 380px;
+	left: 270px;
+	top: 148px;
+}
+#labTNum {
+	font-family: "Arial Unicode MS";
+	font-size: 36px;
+	font-weight: bold;
+	color: #600;
+	display: inline-block;
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	left: 650px;
+	top: 148px;
+}
+#labSec {
+	font-family: "Arial Unicode MS";
+	font-size: 36px;
+	color: #000;
+	display: inline-block;
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	left: 690px;
+	top: 148px;
+}
+#labErr {
+	font-family: "Arial Unicode MS";
+	font-size: 36px;
+	color: #000;
+	display: inline-block;
+	position: absolute;
+	height: 40px;
+	width: 260px;
+	left: 270px;
+	top: 230px;
+}
+#labENum {
+	font-family: "Arial Unicode MS";
+	font-size: 36px;
+	color: #600;
+	display: inline-block;
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	left: 530px;
+	top: 230px;
+}
+#btnFBM {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 180px;
+	left: 520px;
+	top: 490px;
+	font-family: "幼圆";
+	font-weight: bold;
+	font-size: 20px;
+	color: #FFC;
+	background-color: #33CC99;
+}
+#btnLE {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 180px;
+	left: 720px;
+	top: 490px;
+	font-family: "幼圆";
+	font-size: 20px;
+	color: #FFC;
+	font-weight: bold;
+	background-color: #33CC99;
+}
+#btnAgain {
+	position: absolute;
+	height: 50px;
+	width: 180px;
+	left: 320px;
+	top: 490px;
+	display: inline-block;
+	font-family: "幼圆";
+	font-weight: bold;
+	font-size: 20px;
+	color: #FFC;
+	background-color: #33CC99;
+}

@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+#panPERS {
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 921px;
+	width: 1300px;
+	left: 125px;
+	top: 0px;
+}
+#divPERSABY {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 570px;
+	width: 1000px;
+	left: 150px;
+	top: 130px;
+}
+#labPERSAP {
+	font-family: "幼圆";
+	font-size: 36px;
+	font-weight: bold;
+	color: #600;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 250px;
+	left: 50px;
+	top: 50px;
+}
+#labPERSAP {
+	font-family: "幼圆";
+	font-size: 30px;
+	font-weight: bold;
+	color: #600;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 250px;
+	left: 50px;
+	top: 50px;
+}
+#btnPERMAB {
+	font-family: "幼圆";
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 764px;
+	top: 470px;
+}
+
+#labPERSAC {
+	font-family: "幼圆";
+	font-size: 30px;
+	font-weight: bold;
+	color: #3C9;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 410px;
+	left: 300px;
+	top: 130px;
+}
+#labPERSAR {
+	font-family: "Arial Unicode MS";
+	font-size: 80px;
+	font-weight: bold;
+	color: #600;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 100px;
+	width: 400px;
+	left: 300px;
+	top: 250px;
+}
+#btnerclick {
+	font-family: "Arial Unicode MS";
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3CC;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 400px;
+	left: 300px;
+	top: 370px;
+}
+#btnPERMANe {
+	font-family: "Arial Unicode MS";
+	font-size: 20px;
+	color: #FFC;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 564px;
+	top: 470px;
+	font-weight: bold;
+}
+#btnPERMAB {
+	font-family: "Arial Unicode MS";
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 765px;
+	top: 470px;
+}

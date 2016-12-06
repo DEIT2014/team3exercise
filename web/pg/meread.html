@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="meread.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="panPRM">
+<div class="tab-head">
+<h2 id="btnPRMAA" onclick="changeTab1()" class="selected"><div class="labPRMAA" id="labPRMAA" >字母</div></h2>
+<h2 id="btnPRMAN" onclick="changeTab2()" class="unselected"><div id="labPRMAN" class="labPRMAN">数字</div></h2>
+<h2 id="btnPRMAM" onclick="changeTab3()" class="unselected"><div id="labPRMAM"  class="labPRMAM">混合</div></h2>
+</div>
+<div class="tab-content">
+<div id="panPRM1" class="show">
+  <div id="labPRMAP" class="labPRMAP">开始练习吧：</div>
+
+  <div id="divPRMAB" class="divPRMAB">
+    <div id="labPRMAC" class="labPRMAC">请通过点击鼠标左键输入信号</div>
+    <div id="labPRMAR" class="labPRMAR"></div>
+    <button id="btnPRMANe" class="btnPRMANe">next</button>
+    <button id="btnPRMAB" class="btnPRMAB">back</button>
+    <button id="rmaclick" class="rmaclick">click me</button>
+  </div>
+</div>
+
+<div id="panPRM2">
+  <div id="labPRMNP" class="labPRMNP">开始练习吧：</div>
+<div id="divPRMNB" class="divPRMNB">
+    <div id="labPRMNC" class="labPRMNC">请通过点击鼠标左键输入信号</div>
+    <div id="labPRMNR" class="labPRMNR"></div>
+    <button id="btnPRMNNe" class="btnPRMNNe">next</button>
+    <button id="btnPRMNB" class="btnPRMNB">back</button>
+    <button id="rmnclick" class="rmnclick">click me</button>
+  </div></div>
+  
+<div id="panPRM3">
+<div id="labPRMMP" class="labPRMMP">开始练习吧：</div>
+<div id="divPRMMB" class="divPRMMB">
+    <div id="labPRMMC" class="labPRMMC">请通过点击鼠标左键输入信号</div>
+    <div id="labPRMMR" class="labPRMMR"></div>
+    <button id="btnPRMMNe" class="btnPRMMNe">next</button>
+    <button id="btnPRMMB" class="btnPRMMB">back</button>
+    <button id="rmmclick" class="rmmclick">click me</button>
+     
+  </div></div>
+</div>
+</div>
+<script>
+var tab1 = document.getElementById('btnPRMAA');
+ltab1=document.getElementById('labPRMAA');
+tab2 = document.getElementById('btnPRMAN');
+ltab2=document.getElementById('labPRMAN');
+tab3 = document.getElementById('btnPRMAM');
+ltab3=document.getElementById('labPRMAM');
+divPRMAB=document.getElementById('divPRMAB');
+labPRMAC=document.getElementById('labPRMAC');
+labPRMAR=document.getElementById('labPRMAR');
+btnPRMANe=document.getElementById('btnPRMANe');
+btnPRMAB=document.getElementById('btnPRMAB');
+labPRMAP=document.getElementById('labPRMAP');
+rmaclick=document.getElementById('rmaclick');
+c1 = document.getElementById('panPRM1');
+c2 = document.getElementById('panPRM2');
+divPRMNB=document.getElementById('divPRMNB');
+labPRMNC=document.getElementById('labPRMNC');
+labPRMNR=document.getElementById('labPRMNR');
+btnPRMNNe=document.getElementById('btnPRMNNe');
+btnPRMNB=document.getElementById('btnPRMNB');
+labPRMNP=document.getElementById('labPRMNP');
+rmnclick=document.getElementById('rmnclick');
+
+c3 = document.getElementById('panPRM3');
+divPRMMB=document.getElementById('divPRMMB');
+labPRMMC=document.getElementById('labPRMMC');
+labPRMMR=document.getElementById('labPRMMR');
+btnPRMMNe=document.getElementById('btnPRMMNe');
+btnPRMMB=document.getElementById('btnPRMMB');
+labPRMMP=document.getElementById('labPRMMP');
+rmnclick=document.getElementById('rmnclick');
+
+
+function changeTab1() {
+tab1.className = 'selected';
+ltab1.className='labPRMAA';
+tab2.className = 'unselected';
+ltab2.className='labPRMAN';
+tab3.className = 'unselected';
+ltab3.className='labPRMAM';
+c1.className = 'show'
+c2.className = '';
+c3.className = '';
+divPRMAB.className='divPRMAB';
+labPRMAC.className='labPRMAC';
+labPRMAR.className='labPRMAR';
+btnPRMANe.className='btnPRMANe';
+btnPRMAB.className='btnPRMAB';
+labPRMAP.className='labPRMAP';
+rmaclick.className='rmaclick';
+}
+function changeTab2() {
+tab1.className = 'unselected';
+ltab1.className='labPRMAN';
+tab2.className = 'selected';
+ltab2.className='labPRMAA';
+tab3.className = 'unselected';
+ltab3.className='labPRMAM';
+c1.className = '';
+c2.className = 'show';
+c3.className = '';
+divPRMNB.className='divPRMNB';
+labPRMNC.className='labPRMNC';
+labPRMNR.className='labPRMNR';
+btnPRMNNe.className='btnPRMNNe';
+btnPRMNB.className='btnPRMNB';
+labPRMNP.className='labPRMNP';
+rmnclick.className='rmnclick';
+
+}
+function changeTab3() {
+tab1.className = 'unselected';
+ltab1.className='labPRMAN';
+tab2.className = 'unselected';
+ltab2.className='labPRMAM';
+tab3.className = 'selected';
+ltab3.className='labPRMAA';
+c1.className = ''
+c2.className = '';
+c3.className = 'show';
+divPRMMB.className='divPRMMB';
+labPRMMC.className='labPRMMC';
+labPRMMR.className='labPRMMR';
+btnPRMMNe.className='btnPRMMNe';
+btnPRMMB.className='btnPRMMB';
+labPRMMP.className='labPRMMP';
+rmmclick.className='rmmclick';
+
+}
+
+</script>
+</body>
+</html>

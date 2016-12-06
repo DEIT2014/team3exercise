@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+#divLPB {
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 921px;
+	width: 1300px;
+	left: 125px;
+	top: 0px;
+}
+#divLPBY {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 650px;
+	width: 1000px;
+	left: 150px;
+	top: 130px;
+}
+#btnLPBM {
+	font-family: "幼圆";
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 200px;
+	left: 900px;
+	top: 700px;
+}
+#Picture {
+	display: inline-block;
+	position: absolute;
+	height: 450px;
+	width: 350px;
+	left: 69px;
+	top: 68px;
+}
+#content {
+	display: inline-block;
+	position: absolute;
+	height: 453px;
+	left: 444px;
+	top: 69px;
+	width: 542px;
+	font-family: "幼圆";
+	color: #600;
+}
+
+
+#btnLTP {
+	font-family: "幼圆";
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 200px;
+	left: 676px;
+	top: 701px;
+}
+p{text-indent:2em;}

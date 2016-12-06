@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+#divBTea {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 921px;
+	width: 1300px;
+	left: 125px;
+	top: 0px;
+}
+#btnStu {
+	display: inline-block;
+	position: absolute;
+	height: 200px;
+	width: 350px;
+	left: 213px;
+	top: 290px;
+	font-family: "幼圆";
+	font-weight: bold;
+	font-size: 72px;
+	color: #600;
+	background-color: #33CC99;
+}
+#btnPlay {
+	display: inline-block;
+	position: absolute;
+	height: 200px;
+	width: 350px;
+	left: 764px;
+	top: 290px;
+	font-family: "幼圆";
+	font-weight: bold;
+	font-size: 72px;
+	color: #600;
+	background-color: #33CC99;
+}
+#btnTB {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 1094px;
+	top: 820px;
+	font-family: "幼圆";
+	font-weight: bold;
+	font-size: 20px;
+	color: #FFC;
+	background-color: #33CCCC;
+}

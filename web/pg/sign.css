@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+#divSign {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 921px;
+	width: 1300px;
+	left: 125px;
+	top: 0px;
+}
+#labSign {
+	font-family: "幼圆";
+	font-size: 72px;
+	font-weight: bold;
+	color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 79px;
+	width: 300px;
+	left: 556px;
+	top: 52px;
+}
+#labSUserame {
+	font-family: "幼圆";
+	font-size: 36px;
+	font-weight: bold;
+	color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 61px;
+	width: 183px;
+	left: 372px;
+	top: 235px;
+}
+#labSPassword {
+	font-family: "幼圆";
+	font-size: 36px;
+	font-weight: bold;
+	color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 72px;
+	width: 183px;
+	left: 372px;
+	top: 378px;
+}
+#labSSPassword {
+	font-family: "幼圆";
+	font-size: 36px;
+	font-weight: bold;
+	color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 72px;
+	width: 206px;
+	left: 350px;
+	top: 518px;
+}
+#textSUserame {
+	font-size: 28px;
+	color: #000;
+	display: inline-block;
+	position: absolute;
+	height: 63px;
+	width: 394px;
+	top: 235px;
+	left: 556px;
+}
+#textSPassord {
+	font-size: 28px;
+	color: #000;
+	display: inline-block;
+	position: absolute;
+	height: 63px;
+	width: 394px;
+	left: 556px;
+	top: 378px;
+}
+#textSSPassord {
+	font-size: 28px;
+	color: #000;
+	display: inline-block;
+	position: absolute;
+	height: 63px;
+	width: 394px;
+	left: 556px;
+	top: 518px;
+}
+#btnSLogin {
+	display: inline-block;
+	position: absolute;
+	height: 77px;
+	width: 174px;
+	left: 556px;
+	top: 673px;
+	font-family: "幼圆";
+	font-weight: bold;
+	font-size: 28px;
+	color: #FFC;
+	background-color: #33CC99;
+}
+#btnExit {
+	display: inline-block;
+	position: absolute;
+	height: 77px;
+	width: 174px;
+	left: 776px;
+	top: 673px;
+	font-family: "幼圆";
+	font-weight: bold;
+	font-size: 28px;
+	color: #FFC;
+	background-color: #33CC99;
+}

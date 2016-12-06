@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-#divPRB {
+#divPWB {
 	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
@@ -9,8 +9,12 @@
 	width: 1300px;
 	left: 125px;
 	top: 0px;
+	font-family: "幼圆";
+	font-weight: bold;
+	font-size: 20px;
+	color: #FFC;
 }
-#btnPRS {
+#btnPWS {
 	display: inline-block;
 	position: absolute;
 	height: 150px;
@@ -23,7 +27,7 @@
 	color: #600;
 	background-color: #33CC99;
 }
-#btnPRM {
+#btnPWM {
 	display: inline-block;
 	position: absolute;
 	height: 150px;
@@ -36,7 +40,7 @@
 	color: #600;
 	background-color: #33CC99;
 }
-#btnPRL {
+#btnPWL {
 	display: inline-block;
 	position: absolute;
 	height: 150px;
@@ -49,7 +53,7 @@
 	color: #600;
 	background-color: #33CC99;
 }
-#btnPRBL {
+#btnPWBL {
 	display: inline-block;
 	position: absolute;
 	height: 50px;
@@ -62,15 +66,16 @@
 	color: #FFC;
 	background-color: #33CCCC;
 }
-#btnPRBM {
+#btnPWBM {
 	display: inline-block;
 	position: absolute;
 	height: 50px;
 	width: 160px;
 	left: 1100px;
 	top: 840px;
-	background-color: #33CCCC;
 	font-family: "幼圆";
 	font-weight: bold;
 	font-size: 20px;
+	color: #FFC;
+	background-color: #33CCCC;
 }

@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+#divLea {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 921px;
+	width: 1300px;
+	top: 0px;
+	left: 152px;
+}
+#btnVideo {
+	display: inline-block;
+	position: absolute;
+	height: 200px;
+	width: 350px;
+	left: 214px;
+	top: 290px;
+	background-color: #33CC99;
+	font-family: "幼圆";
+	font-weight: bold;
+	font-size: 72px;
+	color: #600;
+}
+#btnPic {
+	display: inline-block;
+	position: absolute;
+	height: 200px;
+	width: 350px;
+	left: 763px;
+	top: 290px;
+	font-family: "幼圆";
+	font-weight: bold;
+	font-size: 72px;
+	color: #600;
+	background-color: #33CC99;
+}
+#btnLLast {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 913px;
+	top: 840px;
+	font-family: "幼圆";
+	font-weight: bold;
+	font-size: 20px;
+	color: #FFC;
+	background-color: #33CCCC;
+}
+#btnLBM {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 1113px;
+	top: 840px;
+	font-family: "幼圆";
+	font-size: 20px;
+	color: #FFC;
+	background-color: #33CCCC;
+}

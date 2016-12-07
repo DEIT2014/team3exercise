@@ -88,3 +88,11 @@
 	left: 125px;
 	top: 0px;
 }
+#Login {
+	display: inline-block;
+	position: absolute;
+	height: 925px;
+	width: 1300px;
+	left: 250px;
+	top: 0px;
+}

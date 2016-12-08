@@ -125,6 +125,7 @@
 |btnPRSAN|进入单个数字读报训练界面|
 |labPRSAR|随机显示单个字母|
 |labPRSNR|随机显示单个数字|
+|btnclick|录入信号|
 |btnPRSANe|labPRSAR显示下一个字母|
 |btnPRSNNe|labPRSNR显示下一个数字|
 |btnPRSNB|返回读报训练界面|
@@ -148,6 +149,7 @@
 |labPRMAR|随机显示纯字母短语|
 |labPRMNR|随机显示纯数字短语|
 |labPRMMR|随机显示混合短语|
+|rmaclick|点击鼠标录入信号|
 |btnPRMANe|labPRMAR显示下一个纯字母短语|
 |btnPRMNNe|labPRMNR显示下一个纯数字短语|
 |btnPRMMNe|labPRMMR显示下一个混合短语|
@@ -185,6 +187,7 @@
 |btnPERSAN|进入单个数字读报错题训练界面|
 |labPERSAR|随机显示单个字母|
 |labPERSNR|随机显示单个数字|
+|btnerclick|点击以录入信号|
 |btnPERSANe|labPERSAR显示下一个字母|
 |btnPERSNNe|labPERSNR显示下一个数字|
 |btnPERSAB|返回读报错题训练界面|

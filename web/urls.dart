@@ -1,0 +1,20 @@
+import 'package:route/url_pattern.dart';
+
+final index = new UrlPattern('/index');
+final sign = new UrlPattern('/sign');
+final main = new UrlPattern('/main');
+final learn = new UrlPattern('/learn');
+final teach = new UrlPattern('/teach');
+final picture = new UrlPattern('/picture');
+final video = new UrlPattern('/video');
+final practice = new UrlPattern('/practice');
+final mread = new UrlPattern('/mread');
+final sread = new UrlPattern('/sread');
+final meread = new UrlPattern('/meread');
+final mwrite = new UrlPattern('/mwrite');
+final swrite = new UrlPattern('/swrite');
+final mewrite = new UrlPattern('/mewrite');
+final merror = new UrlPattern('/merror');
+final rerror = new UrlPattern('/rerror');
+final werror = new UrlPattern('/werror');
+final end = new UrlPattern('/end');

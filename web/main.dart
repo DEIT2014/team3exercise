@@ -6,9 +6,23 @@ import 'dart:convert';
 import 'package:route/client.dart';
 import 'package:logging/logging.dart';
 import 'urls.dart' as urls;
+import 'dart:math';
+
 HttpRequest request;
+List<int> t1 = new List(5);
+List<int> t2 = new List(5);
+List<int> T2 = new List(5);
+List<String> dataList;
+String datalist;
+int clicknumber=-1,nowclick=0;
+int longt=3500,num=2500,shortt=1500;
+
 void main(){
-  querySelector("#btnPRLB").onClick.listen(click);
+  querySelector("#btnPRLB").onClick.listen(click1);
+  querySelector("#btnCLICK")
+       ..onMouseDown.listen(onText1)
+       ..onMouseUp.listen(onText2);
+
   new Router()
     ..addHandler(urls.sign, showSign)//注册界面
     ..addHandler(urls.main, showMain)//主界面
@@ -30,19 +44,49 @@ void main(){
     ..addHandler(urls.index, (_) => null)//登录界面
     ..listen();
 }
-void click(MouseEvent e) {
-  String url = 'http://localhost:8080/quest';
-  request = new HttpRequest();
-  request.onReadyStateChange.listen(onData);
-  request.open('GET', url);
-  request.send();
+void click1(MouseEvent e){
+     querySelector("#btnCLICK").text="点我测试";
+     String url = 'http://localhost:8080';
+     request = new HttpRequest();
+     request.onReadyStateChange.listen(onData);
+     request.open('GET', url);
+     request.send(" your jsonndata");
+   }
 
-}
 
-void onData(_) {
-  if (request.readyState == HttpRequest.DONE && request.status == 200){
-    Map questData = JSON.decode(request.responseText);
-    var WordData = questData["Word1"];
-    querySelector("#QUES").text =WordData;
-  }}
+ void onText1(MouseEvent event) {
+     t1[nowclick]=event.timeStamp;
+   }
+ void onText2(MouseEvent event) {
+     t2[nowclick]=event.timeStamp-t1[nowclick];
+     nowclick++;
+     if(clicknumber==nowclick-1){
+         String value='';
+         for(int i=0;i<=clicknumber;i++)
+           {
+             if(t2[i]<shortt)
+                 value=value+'1';
+             else if( num < t2[i] && t2[i]<longt )
+             value=value+'3';
+         else
+         value=value+'2';
+     }
+     if(value==datalist)
+       querySelector("#btnCLICK").text="you win!";
+     else
+       querySelector("#btnCLICK").text="you lose!";
+   }
+ }
+
+
+ void onData(_) {
+     if (request.readyState == HttpRequest.DONE && request.status == 200) {
+         String jsonData=request.responseText;
+         List<String> dataList=jsonData.split(" ");
+         clicknumber= dataList[1].length-1;
+         datalist=dataList[1];
+         querySelector("#QUES").text= dataList[0];
+       }
+   }
+
 

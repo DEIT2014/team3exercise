@@ -18,6 +18,9 @@ String datalist;
 int clicknumber=-1,nowclick=0;
 int longt=3500,num=2500,shortt=1500;
 
+
+
+
 void main(){
   querySelector("#btnPRLB").onClick.listen(click1);
   querySelector("#btnCLICK")

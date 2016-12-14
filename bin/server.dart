@@ -89,7 +89,7 @@ Future<String> getDataFromDb() async {
   });
   var Randomvar= new Random();
   int n=Randomvar.nextInt(12);
-  String jsonData=word['$n']+" "+ time['$n'];
+    String jsonData=word['$n']+" "+ time['$n'];
   //String jsonData = JSON.encode(word['$n'] +" "+ time['$n']);
   return jsonData;
 }

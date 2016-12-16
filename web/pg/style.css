@@ -9,7 +9,7 @@
 	position: absolute;
 	height: 53px;
 	width: 157px;
-	left: 883px;
+	left: 913px;
 	top: 52px;
 }
 #labUserame {
@@ -22,7 +22,7 @@
 	position: absolute;
 	height: 61px;
 	width: 156px;
-	left: 680px;
+	left: 710px;
 	top: 193px;
 }
 #labPassword {
@@ -36,7 +36,7 @@
 	position: absolute;
 	height: 72px;
 	width: 156px;
-	left: 680px;
+	left: 710px;
 	top: 336px;
 }
 #textUsername {
@@ -44,7 +44,7 @@
 	font-size:28px;
 	height: 63px;
 	width: 370px;
-	left: 837px;
+	left: 867px;
 	top: 193px;
 }
 #textPassword {
@@ -53,7 +53,7 @@
 	height: 63px;
 	width: 370px;
 	top: 336px;
-	left: 837px;
+	left: 867px;
 }
 #btnLogin {
 	display: inline-block;
@@ -80,19 +80,13 @@
 	font-weight: bold;
 	font-size: 28px;
 	background-color: #33CC99;
-#Login {
-	display: inline-block;
-	position: absolute;
-	height: 921px;
-	width: 1300px;
-	left: 125px;
-	top: 0px;
+
 }
 #Login {
 	display: inline-block;
 	position: absolute;
-	height: 925px;
-	width: 1300px;
-	left: 250px;
+	height: 700px;
+	width: 1340px;
+	left: 0px;
 	top: 0px;
 }

@@ -33,8 +33,8 @@ display: none;
 	display: inline-block;
 	background-color: #3C9;
 	position: absolute;
-	height: 921px;
-	width: 1300px;
+	height: 630px;
+	width: 1340px;
 	left: 0px;
 	top: 70px;
 }
@@ -94,19 +94,19 @@ display: none;
 #panPWS {
 	display: inline-block;
 	position: absolute;
-	height: 991px;
-	width: 1300px;
-	left: 125px;
+	height: 700px;
+	width: 1340px;
+	left: 0px;
 	top: 0px;
 }
 .tab-content .divPWSABY {
 	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
-	height: 570px;
-	width: 1000px;
-	left: 150px;
-	top: 175px;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 65px;
 }
  .tab-content .divPWSABY .labPWAP {
 	font-family: "幼圆";
@@ -118,7 +118,7 @@ display: none;
 	height: 35px;
 	width: 660px;
 	top: 70px;
-	left: 170px;
+	left: 240px;
 }
 .tab-content .divPWSABY .labPWSNR {
 	font-family: "Arial Unicode MS";
@@ -129,7 +129,7 @@ display: none;
 	position: absolute;
 	height: 80px;
 	width: 180px;
-	left: 410px;
+	left: 480px;
 	top: 135px;
 }
 .tab-content .divPWSABY .labPWSAR {
@@ -141,7 +141,7 @@ display: none;
 	position: absolute;
 	height: 80px;
 	width: 180px;
-	left: 410px;
+	left: 480px;
 	top: 135px;
 }
 .tab-content .textPWSA {
@@ -152,7 +152,18 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 660px;
-	left: 170px;
+	left: 240px;
+	top: 270px;
+}
+.tab-content .textPWSN {
+	font-family: "Arial Unicode MS";
+	font-size: 15px;
+	color: #000;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 660px;
+	left: 240px;
 	top: 270px;
 }
 
@@ -161,25 +172,51 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 564px;
-	top: 495px;
+	left: 750px;
+	top: 420px;
 	background-color: #33CC99;
 	color: #FFC;
 	font-size: 20px;
 	font-weight: bold;
 }
+.tab-content .divPWSABY .btnPWSNN {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 750px;
+	top: 420px;
+	background-color: #33CC99;
+	color: #FFC;
+	font-size: 20px;
+	font-weight: bold;
+}
+
 .tab-content .divPWSABY .btnPWSAB {
 	display: inline-block;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 764px;
-	top: 495px;
+	left: 950px;
+	top: 420px;
 	background-color: #33CC99;
 	color: #FFC;
 	font-size: 20px;
 	font-weight: bold;
 }
+.tab-content .divPWSABY .btnPWSNB {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 950px;
+	top: 420px;
+	background-color: #33CC99;
+	color: #FFC;
+	font-size: 20px;
+	font-weight: bold;
+}
+
 .tab-content .labPWSAS {
 	font-family: "幼圆";
 	font-size: 36px;
@@ -189,6 +226,6 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 250px;
-	left: 50px;
-	top: 50px;
+	left: 15px;
+	top: 15px;
 }

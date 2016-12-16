@@ -54,8 +54,8 @@ display: none;
 	display: inline-block;
 	background-color: #3C9;
 	position: absolute;
-	height: 921px;
-	width: 1300px;
+	height: 630px;
+	width: 1340px;
 	left: 0px;
 	top: 70px;
 	color: #3C9;
@@ -64,10 +64,10 @@ display: none;
 	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
-	height: 570px;
-	width: 1000px;
-	left: 150px;
-	top: 175px;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 65px;
 }
 .tab-content .labPRMAC {
 	font-family: "幼圆";
@@ -79,8 +79,8 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 410px;
-	left: 300px;
-	top: 130px;
+	left: 365px;
+	top: 90px;
 }
 .tab-content .labPRMAR {
 	font-family: "幼圆";
@@ -92,16 +92,16 @@ display: none;
 	position: absolute;
 	height: 100px;
 	width: 400px;
-	left: 300px;
-	top: 250px;
+	left: 365px;
+	top: 210px;
 }
 .tab-content .btnPRMANe {
 	display: inline-block;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 564px;
-	top: 470px;
+	left: 750px;
+	top: 420px;
 	background-color: #33CC99;
 	font-size: 20px;
 	font-weight: bold;
@@ -112,8 +112,8 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 764px;
-	top: 470px;
+	left: 950px;
+	top: 420px;
 	background-color: #33CC99;
 	color: #FFC;
 	font-weight: bold;
@@ -121,9 +121,9 @@ display: none;
 }
 #panPRM {
 	display: inline-block;
-	height: 991px;
-	width: 1300px;
-	left: 125px;
+	height: 700px;
+	width: 1340px;
+	left: 0px;
 	top: 0px;
 	position: absolute;
 }
@@ -190,8 +190,8 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 250px;
-	left: 50px;
-	top: 50px;
+	left: 15px;
+	top: 15px;
 }
 
 
@@ -202,10 +202,10 @@ display: none;
 	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
-	height: 570px;
-	width: 1000px;
-	left: 150px;
-	top: 175px;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 65px;
 }
 .tab-content .labPRMNC {
 	font-family: "幼圆";
@@ -217,8 +217,8 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 410px;
-	left: 300px;
-	top: 130px;
+	left: 365px;
+	top: 90px;
 }
 .tab-content .labPRMNR {
 	font-family: "幼圆";
@@ -230,16 +230,16 @@ display: none;
 	position: absolute;
 	height: 100px;
 	width: 400px;
-	left: 300px;
-	top: 250px;
+	left: 365px;
+	top: 210px;
 }
 .tab-content .btnPRMNNe {
 	display: inline-block;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 564px;
-	top: 470px;
+	left: 750px;
+	top: 420px;
 	font-family: "Arial Unicode MS";
 	font-size: 20px;
 	font-weight: bold;
@@ -251,8 +251,8 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 764px;
-	top: 470px;
+	left: 950px;
+	top: 420px;
 	font-family: "Arial Unicode MS";
 	font-size: 20px;
 	font-weight: bold;
@@ -268,8 +268,8 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 250px;
-	left: 50px;
-	top: 50px;
+	left: 15px;
+	top: 15px;
 }
 
 
@@ -280,10 +280,10 @@ display: none;
 	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
-	height: 570px;
-	width: 1000px;
-	left: 150px;
-	top: 175px;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 65px;
 }
 .tab-content .labPRMMC {
 	font-family: "幼圆";
@@ -295,8 +295,8 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 410px;
-	left: 300px;
-	top: 130px;
+	left: 365px;
+	top: 90px;
 }
 .tab-content .labPRMMR {
 	font-family: "幼圆";
@@ -308,16 +308,16 @@ display: none;
 	position: absolute;
 	height: 100px;
 	width: 400px;
-	left: 300px;
-	top: 250px;
+	left: 365px;
+	top: 210px;
 }
 .tab-content .btnPRMMNe {
 	display: inline-block;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 564px;
-	top: 470px;
+	left: 750px;
+	top: 420px;
 	font-family: "Arial Unicode MS";
 	font-size: 20px;
 	font-weight: bold;
@@ -329,8 +329,8 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 764px;
-	top: 470px;
+	left: 950px;
+	top: 420px;
 	font-family: "Arial Unicode MS";
 	font-size: 20px;
 	font-weight: bold;
@@ -347,8 +347,8 @@ display: none;
 	position: absolute;
 	width: 200px;
 	height: 50px;
-	left: 400px;
-	top: 380px;
+	left: 470px;
+	top: 340px;
 }
 	
 .rmnclick {
@@ -361,8 +361,8 @@ display: none;
 	position: absolute;
 	width: 200px;
 	height: 50px;
-	left: 400px;
-	top: 380px;
+	left: 470px;
+	top: 340px;
 }
 
 .rmmclick {
@@ -375,8 +375,8 @@ display: none;
 	position: absolute;
 	width: 200px;
 	height: 50px;
-	left: 400px;
-	top: 380px;
+	left: 470px;
+	top: 340px;
 }
 .tab-content .labPRMMP {
 	font-family: "幼圆";
@@ -387,6 +387,6 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 250px;
-	left: 50px;
-	top: 50px;
+	left: 15px;
+	top: 15px;
 }

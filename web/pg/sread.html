@@ -21,16 +21,16 @@
   <div id="divPRSABY" class="divPRSABY">
     <div id="labPRSAC" class="labPRSAC">请通过点击鼠标左键输入信号</div>
     <div id="labPRSAR" class="labPRSAR"></div>
-    <button id="btnPRSANe" class="btnPRSANe">next</button>
-    <button id="btnPRSAB" class="btnPRSAB">back</button>
-    <button id="btnclick" class="btnclick">click me</button>
+    <button name="btnPRSANe" class="btnPRSANe" id="btnPRSANe">next</button>
+    <button name="btnPRSAB" class="btnPRSAB" id="btnPRSAB">back</button>
+    <button name="btnclick" class="btnclick" id="btnclick">click me</button>
   </div>
 </div>
 <div id="panPRS2">
 <div id="labPRSAS" class="labPRSAS">开始练习吧：</div>
   <div id="divPRSABY" class="divPRSABY">
     <div id="labPRSAC" class="labPRSAC">请通过点击鼠标左键输入信号</div>
-    <div id="labPRSAR" class="labPRSAR"></div>
+    <div id="labPRSNR" class="labPRSNR"></div>
     <button id="btnPRSANe" class="btnPRSANe">next</button>
     <button id="btnPRSAB" class="btnPRSAB">back</button>
      <button id="btnclick" class="btnclick">click me</button>
@@ -47,8 +47,11 @@ c1 = document.getElementById('panPRS1');
 divPRSABY=document.getElementById('divPRSABY');
 labPRSAC=document.getElementById('labPRSAC');
 labPRSAR=document.getElementById('labPRSAR');
+labPRSNR=document.getElementById('labPRSNR');
 btnPRSANe=document.getElementById('btnPRSANe');
 btnPRSAB=document.getElementById('btnPRSAB');
+btnPRSNNe=document.getElementById('btnPRSNNe');
+btnPRSNB=document.getElementById('btnPRSNB');
 labPRSAS=document.getElementById('labPRSAS');
 btnclick=document.getElementById('btnclick');
 c2 = document.getElementById('panPRS2');
@@ -77,9 +80,9 @@ c1.className = '';
 c2.className = 'show';
 divPRSABY.className='divPRSABY';
 labPRSAC.className='labPRSAC';
-labPRSAR.className='labPRSAR';
-btnPRSANe.className='btnPRSANe';
-btnPRSAB.className='btnPRSAB';
+labPRSNR.className='labPRSNR';
+btnPRSNNe.className='btnPRSNNe';
+btnPRSNB.className='btnPRSNB';
 labPRSAS.className='labPRSAS';
 btnclick.className='btnclick';
 

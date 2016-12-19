@@ -1,0 +1,75 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+#divPRB {
+   background-color: #FFC;
+   position: absolute;
+   height: 700px;
+   width: 1340px;
+   top: 0px;
+}
+#btnPRS {
+   display: inline-block;
+   position: absolute;
+   height: 100px;
+   width: 400px;
+   left: 450px;
+   top: 100px;
+   font-family: "幼圆";
+   font-weight: bold;
+   font-size: 60px;
+   color: #600;
+   background-color: #33CC99;
+}
+#btnPRM {
+   display: inline-block;
+   position: absolute;
+   height: 100px;
+   width: 400px;
+   left: 450px;
+   top: 250px;
+   font-family: "幼圆";
+   font-weight: bold;
+   font-size: 60px;
+   color: #600;
+   background-color: #33CC99;
+}
+#btnPRL {
+   display: inline-block;
+   position: absolute;
+   height: 100px;
+   width: 400px;
+   left: 450px;
+   top: 400px;
+   font-family: "幼圆";
+   font-weight: bold;
+   font-size: 60px;
+   color: #600;
+   background-color: #33CC99;
+}
+#btnPRBL {
+   display: inline-block;
+   position: absolute;
+   height: 50px;
+   width: 160px;
+   left: 780px;
+   top: 570px;
+   font-family: "幼圆";
+   font-weight: bold;
+   font-size: 20px;
+   color: #FFC;
+   background-color: #33CCCC;
+}
+#btnPRBM {
+   display: inline-block;
+   position: absolute;
+   height: 50px;
+   width: 160px;
+   left: 1000px;
+   top: 570px;
+   background-color: #33CCCC;
+   font-family: "幼圆";
+   font-weight: bold;
+   font-size: 20px;
+}

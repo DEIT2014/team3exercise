@@ -54,8 +54,8 @@ display: none;
 	display: inline-block;
 	background-color: #3C9;
 	position: absolute;
-	height: 921px;
-	width: 1300px;
+	height: 630px;
+	width: 1340px;
 	left: 0px;
 	top: 70px;
 	color: #3C9;
@@ -64,10 +64,10 @@ display: none;
 	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
-	height: 570px;
-	width: 1000px;
-	left: 150px;
-	top: 175px;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 65px;
 }
 .tab-content .labPWMAC {
 	font-family: "幼圆";
@@ -79,7 +79,7 @@ display: none;
 	position: absolute;
 	height: 35px;
 	width: 660px;
-	left: 170px;
+	left: 240px;
 	top: 70px;
 }
 .tab-content .labPWMAR {
@@ -92,7 +92,7 @@ display: none;
 	position: absolute;
 	height: 80px;
 	width: 180px;
-	left: 410px;
+	left: 480px;
 	top: 135px;
 }
 .textPWMAA {
@@ -102,17 +102,17 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 660px;
-	left: 170px;
+	left: 240px;
 	top: 270px;
 }
 .tab-content .divPWMNB {
 	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
-	height: 570px;
-	width: 1000px;
-	left: 150px;
-	top: 175px;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 65px;
 }
 .tab-content .labPWMNC {
 	font-family: "幼圆";
@@ -124,7 +124,7 @@ display: none;
 	position: absolute;
 	height: 35px;
 	width: 660px;
-	left: 170px;
+	left: 240px;
 	top: 70px;
 }
 .tab-content .labPWMNR {
@@ -137,7 +137,7 @@ display: none;
 	position: absolute;
 	height: 80px;
 	width: 180px;
-	left: 410px;
+	left: 480px;
 	top: 135px;
 }
 .textPWMNA {
@@ -147,7 +147,7 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 660px;
-	left: 170px;
+	left: 240px;
 	top: 270px;
 }
 
@@ -158,17 +158,17 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 660px;
-	left: 170px;
+	left: 240px;
 	top: 270px;
 }
 .tab-content .divPWMMB {
 	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
-	height: 570px;
-	width: 1000px;
-	left: 150px;
-	top: 175px;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 65px;
 }
 .tab-content .labPWMMC {
 	font-family: "幼圆";
@@ -180,7 +180,7 @@ display: none;
 	position: absolute;
 	height: 35px;
 	width: 660px;
-	left: 170px;
+	left: 240px;
 	top: 70px;
 }
 .tab-content .labPWMMR {
@@ -193,7 +193,7 @@ display: none;
 	position: absolute;
 	height: 80px;
 	width: 180px;
-	left: 410px;
+	left: 480px;
 	top: 135px;
 }
 .tab-content .labPWMMP {
@@ -205,16 +205,16 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 250px;
-	left: 50px;
-	top: 50px;
+	left: 15px;
+	top: 15px;
 }
 .tab-content .btnPWMMNe{
 	display: inline-block;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 564px;
-	top: 470px;
+	left: 750px;
+	top: 420px;
 	background-color: #33CC99;
 	font-size: 20px;
 	font-weight: bold;
@@ -225,8 +225,8 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 764px;
-	top: 470px;
+	left: 950px;
+	top: 420px;
 	background-color: #33CC99;
 	color: #FFC;
 	font-weight: bold;
@@ -237,23 +237,23 @@ display: none;
 .tab-content .btnPWMANe{
 	display: inline-block;
 	position: absolute;
-	height: 50px;
-	width: 160px;
-	left: 564px;
-	top: 470px;
+	left: 750px;
+	top: 420px;
 	background-color: #33CC99;
 	font-size: 20px;
 	font-weight: bold;
 	color: #FFC;
 	font-family: "Arial Unicode MS";
+	height: 50px;
+	width: 160px;
 }
 .tab-content .btnPWMAB {
 	display: inline-block;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 764px;
-	top: 470px;
+	left: 950px;
+	top: 420px;
 	background-color: #33CC99;
 	color: #FFC;
 	font-weight: bold;
@@ -265,8 +265,8 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 564px;
-	top: 470px;
+	left: 750px;
+	top: 420px;
 	background-color: #33CC99;
 	font-size: 20px;
 	font-weight: bold;
@@ -277,9 +277,9 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 764px;
-	top: 470px;
-	background-color: #33CC99;
+	left: 950px;
+	top: 420px;
+	background-color: #3C9;
 	color: #FFC;
 	font-weight: bold;
 	font-size: 20px;
@@ -288,9 +288,9 @@ display: none;
 
 #panPWM {
 	display: inline-block;
-	height: 991px;
-	width: 1300px;
-	left: 125px;
+	height: 700px;
+	width: 1340px;
+	left: 0px;
 	top: 0px;
 	position: absolute;
 }
@@ -358,8 +358,8 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 250px;
-	left: 50px;
-	top: 50px;
+	left: 15px;
+	top: 15px;
 }
 .tab-content .labPWMNP {
 	font-family: "幼圆";
@@ -370,6 +370,7 @@ display: none;
 	position: absolute;
 	height: 50px;
 	width: 250px;
-	left: 50px;
-	top: 50px;
+	left: 15px;
+	top: 15px;
+	background-color: #3C9;
 }

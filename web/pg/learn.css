@@ -5,18 +5,18 @@
 	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
-	height: 921px;
-	width: 1300px;
+	height: 700px;
+	width: 1340px;
 	top: 0px;
-	left: 152px;
+	left: 0px;
 }
 #btnVideo {
 	display: inline-block;
 	position: absolute;
 	height: 200px;
 	width: 350px;
-	left: 214px;
-	top: 290px;
+	left: 222px;
+	top: 250px;
 	background-color: #33CC99;
 	font-family: "幼圆";
 	font-weight: bold;
@@ -28,8 +28,8 @@
 	position: absolute;
 	height: 200px;
 	width: 350px;
-	left: 763px;
-	top: 290px;
+	left: 771px;
+	top: 250px;
 	font-family: "幼圆";
 	font-weight: bold;
 	font-size: 72px;
@@ -42,7 +42,7 @@
 	height: 50px;
 	width: 160px;
 	left: 913px;
-	top: 840px;
+	top: 620px;
 	font-family: "幼圆";
 	font-weight: bold;
 	font-size: 20px;
@@ -55,7 +55,7 @@
 	height: 50px;
 	width: 160px;
 	left: 1113px;
-	top: 840px;
+	top: 620px;
 	font-family: "幼圆";
 	font-size: 20px;
 	color: #FFC;

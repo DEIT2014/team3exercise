@@ -5,19 +5,19 @@
 	background-color: #3C9;
 	display: inline-block;
 	position: absolute;
-	height: 921px;
-	width: 1300px;
-	left: 125px;
+	height: 700px;
+	width: 1340px;
+	left: 0px;
 	top: 0px;
 }
 #divLVBY {
 	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
-	height: 650px;
-	width: 1000px;
-	left: 150px;
-	top: 130px;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 100px;
 }
 #btnLVP {
 	font-family: "幼圆";
@@ -28,9 +28,9 @@
 	display: inline-block;
 	position: absolute;
 	height: 50px;
-	width: 200px;
-	left: 675px;
-	top: 700px;
+	width: 180px;
+	left: 780px;
+	top: 540px;
 }
 #btnLVBM {
 	font-family: "幼圆";
@@ -41,15 +41,15 @@
 	display: inline-block;
 	position: absolute;
 	height: 50px;
-	width: 200px;
-	left: 900px;
-	top: 700px;
+	width: 180px;
+	left: 980px;
+	top: 540px;
 }
 #Video {
 	display: inline-block;
 	position: absolute;
-	height: 450px;
-	width: 700px;
-	left: 150px;
-	top: 60px;
+	height: 300px;
+	width: 600px;
+	left: 270px;
+	top: 100px;
 }

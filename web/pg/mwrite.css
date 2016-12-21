@@ -17,7 +17,7 @@
 #btnPWS {
 	display: inline-block;
 	position: absolute;
-	height: 100px;
+	height: 150px;
 	width: 400px;
 	left: 450px;
 	top: 100px;
@@ -30,23 +30,10 @@
 #btnPWM {
 	display: inline-block;
 	position: absolute;
-	height: 100px;
+	height: 150px;
 	width: 400px;
 	left: 450px;
-	top: 250px;
-	font-family: "幼圆";
-	font-weight: bold;
-	font-size: 60px;
-	color: #600;
-	background-color: #33CC99;
-}
-#btnPWL {
-	display: inline-block;
-	position: absolute;
-	height: 100px;
-	width: 400px;
-	left: 450px;
-	top: 400px;
+	top: 300px;
 	font-family: "幼圆";
 	font-weight: bold;
 	font-size: 60px;

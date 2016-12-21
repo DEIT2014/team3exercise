@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+#divEback {
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 700px;
+	width: 1340px;
+	left: 0px;
+	top: 0px;
+}
+#form1 {
+	display: inline-block;
+	position: absolute;
+	height: 350px;
+	width: 500px;
+	left: 50px;
+	top: 20px;
+}
+#toLast {
+	font-family: "幼圆";
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3CC;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 500px;
+	top: 400px;
+}
+
+#form2 {
+	display: inline-block;
+	position: absolute;
+	height: 350px;
+	width: 500px;
+	left: 600px;
+	top: 20px;
+}
+#toRead {
+	font-family: "幼圆";
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 220px;
+	top: 400px;
+	color: #FFC;
+}
+#toWrite {
+	font-family: "幼圆";
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	top: 400px;
+	left: 770px;
+}
+
+#divEback1 {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 100px;
+}

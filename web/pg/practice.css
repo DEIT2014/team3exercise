@@ -5,17 +5,17 @@
 	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
-	height: 921px;
-	width: 1300px;
-	left: 125px;
+	height: 700px;
+	width: 1340px;
+	left: 0px;
 	top: 0px;
 }
 #btnPR {
 	position: absolute;
 	height: 200px;
 	width: 350px;
-	left: 200px;
-	top: 290px;
+	left: 220px;
+	top: 250px;
 	display: inline-block;
 	font-family: "幼圆";
 	font-weight: bold;
@@ -28,8 +28,8 @@
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 900px;
-	top: 840px;
+	left: 940px;
+	top: 620px;
 	font-family: "幼圆";
 	font-weight: bold;
 	font-size: 20px;
@@ -41,8 +41,8 @@
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 1100px;
-	top: 840px;
+	left: 1140px;
+	top: 620px;
 	font-family: "幼圆";
 	font-weight: bold;
 	font-size: 20px;
@@ -59,6 +59,6 @@
 	position: absolute;
 	height: 200px;
 	width: 350px;
-	left: 750px;
-	top: 290px;
+	left: 770px;
+	top: 250px;
 }

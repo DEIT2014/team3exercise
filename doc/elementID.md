@@ -5,7 +5,8 @@
 |textPassword     |登录时的密码字段  |
 |btnLogin         |登录按钮          |
 |btnSign          |进入注册界面按钮  |
-
+|prUser           |用户名输入错误时提示|
+|prPass           |密码输入错误时提示|
 | id              | 描述             |
 | ------------- |:--------------:| 
 |divSign|注册界面|
@@ -101,13 +102,7 @@
 |btnPWMMB|返回抄报训练界面|
 |btnPWMNB|返回抄报训练界面|
 
-| id              | 描述             |
-| ------------- |:--------------:| 
-|divPWLBg|长句抄报训练界面|
-|labPWLR|随机显示一条长句|
-|textPWLA|用户输入长句答案|
-|btnPWLNe|labPWLR显示下一条长句|
-|btnPWLB|返回抄报训练界面|
+
 
 | id              | 描述             |
 | ------------- |:--------------:|                
@@ -156,117 +151,37 @@
 |btnPRMAB|返回读报训练界面|
 |btnPRMNB|返回读报训练界面|
 |btnPRMMB|返回读报训练界面|
+| id              | 描述             |
+| ------------- |:--------------:| 
+|divEback|错题目录界面|
+|form1|读报错题目录|
+|toRead|进入读报错题训练|
+|form2|抄报错题目录|
+|toWrite|进入抄报错题训练|
+|toLast|回到主界面|
+
 
 | id              | 描述             |
 | ------------- |:--------------:|
-|divPRLBg|长句读报训练|
-|labPRLA|随机显示长句|
-|btnPRLNe|labPRLA显示下一句|
-|btnPRLB|返回读报训练界面|
+|panPERS|读报错题训练界面|
+|labPERSAR|随机显示读报错题|
+|btnerclick|输入信号|
+|btnPERMANe|显示下一错题|
+|btnPERMAB|返回错题列表界面|
+
+
 
 | id              | 描述             |
 | ------------- |:--------------:|
-|divEr|错题列表|
-|btnERe|进入读报错题训练|
-|btnEWr|进入抄报错题训练|
-|btnRMa|返回主界面|
+|panPEWM|抄报错题训练界面|
+|labPEWMAR|随机显示抄报错题|
+|textPEWMAA|输入答案|
+|btnPEWMANe|显示下一错题|
+|btnPEWMAB|返回错题列表界面|
+
 
 | id              | 描述             |
 | ------------- |:--------------:|
-|divERB|读报错题训练界面|
-|btnERS|进入单个字符读报错题训练界面|
-|btnERM|进入短语读报错题界面|
-|btnERL|进入长句读报错题界面|
-|btnERBL|返回错题列表界面|
-|btnERBM|返回主界面|
-
-| id              | 描述             |
-| ------------- |:--------------:|
-|panPERS|单个字符读报错题训练界面|
-|btnPERSAA|进入单个字母读报错题训练界面|
-|btnPERSAN|进入单个数字读报错题训练界面|
-|labPERSAR|随机显示单个字母|
-|labPERSNR|随机显示单个数字|
-|btnerclick|点击以录入信号|
-|btnPERSANe|labPERSAR显示下一个字母|
-|btnPERSNNe|labPERSNR显示下一个数字|
-|btnPERSAB|返回读报错题训练界面|
-|btnPERSNB|返回读报错题训练界面|
-
-| id              | 描述             |
-| ------------- |:--------------:|
-|panPERM|短语读报错题训练界面|
-|btnPERMAA|进入纯字母短语读报错题 训练界面|
-|btnPERMAN|进入纯数字短语读报错题训练界面|
-|btnPERMAM|进入混合短语读报错题训练界面|
-|labPERMAR|随机显示单个纯字母短语|
-|labPERMNR|随机显示单个纯数字短语|
-|labPERMMR|随机显示单个混合短语|
-|btnPERMANe|labPERMAR显示下一个纯字母短语|
-|btnPERMNNe|labPERMNR显示下一个纯数字短语|
-|btnPERMMNe|labPERMMR显示下一个混合短语|
-|btnPERMAB|返回读报错题训练界面|
-|btnPERMNB|返回读报错题训练界面|
-|btnPERMMB|返回读报错题训练界面|
-
-| id              | 描述             |
-| ------------- |:--------------:|
-|dviPERLBg|长句读报错题训练界面|
-|labPERLR|随机显示长句|
-|btnPERLNe|labPERLR显示下一个长句|
-|btnPERLB|返回读报错题训练界面|
-
-| id              | 描述             |
-| ------------- |:--------------:|
-|divEWB|抄报错题训练界面|
-|btnEWS|进入单个字符抄报错题训练界面|
-|btnEWM|进入短语抄报错题训练界面|
-|btnEWL|进入长句抄报错题训练界面|
-|btnEWBL|返回错题目录|
-|btnEWBM|返回主界面|
-
-| id              | 描述             |
-| ------------- |:--------------:|
-|panPEWS|单个字符抄报错题训练界面|
-|btnPEWSAA|进入单个字母抄报错题训练界面|
-|btnPEWSAN|进入单个数字抄报错题训练界面|
-|labPEWSAR|随机显示单个字母|
-|labPEWSNR|随机显示单个数字|
-|textPEWSAA|用户输入字母的答案|
-|textPEWSNA|用户输入数字的答案|
-|btnPEWSANe|labPEWSAR显示下一个字母|
-|btnPEWSNNe|labPEWSNR显示下一个数字|
-|btnPEWSAB|返回抄报错题训练界面|
-|btnPEWSNB|返回抄报错题训练界面|
-
-| id              | 描述             |
-| ------------- |:--------------:|
-|panPEWM|短语抄报错题训练界面|
-|btnPEWMAA|进入纯字母短语抄报错题训练界面|
-|btnPEWMAN|进入纯数字短语抄报错题训练界面|
-|btnPEWMAM|进入混合短语抄报错题训练界面|
-|labPEWMAR|随机显示纯字母短语|
-|labPEWMNR|随机显示纯数字短语|
-|labPEWMMR|随机显示混合短语|
-|textPEWMAA|用户输入纯字母短语答案|
-|textPEWMNA|用户输入纯数字短语答案|
-|textPEWMMA|用户输入混合短语答案|
-|btnPEWMANe|labPEWMAR显示下一个纯字母短语|
-|btnPEWMNNe|labPEWMNR显示下一个纯数字短语|
-|btnPEWMMNe|labPEWMMR显示下一个混合短语|
-|btnPEWMAB|返回抄报错题训练界面|
-|btnPEWMNB|返回抄报错题训练界面|
-|btnPEWMMB|返回抄报错题训练界面|
-
-| id              | 描述             |
-| ------------- |:--------------:|
-|divPEWLBg|长句抄报错题训练界面|
-|labPEWLR|随机显示长句|
-|textPEWLA|用户输入长句答案|       
-|btnPEWLNe|labPEWLR显示下一个长句|
-|btnPEWLB|返回抄报错题训练界面|
-
-| id              | 描述             |
-| ------------- |:--------------:|
-|divNE|无错题记录提示界面|
-|btnNEB|返回错题目录|                                             
+|divPrompt|无错题记录提示界面|
+|proLast|返回错题目录|
+|proMain|返回主界面|

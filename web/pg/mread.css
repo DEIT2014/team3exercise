@@ -48,14 +48,15 @@
    background-color: #33CCCC;
 }
 #btnPRBM {
-   display: inline-block;
-   position: absolute;
-   height: 50px;
-   width: 160px;
-   left: 1000px;
-   top: 570px;
-   background-color: #33CCCC;
-   font-family: "幼圆";
-   font-weight: bold;
-   font-size: 20px;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 1000px;
+	top: 570px;
+	background-color: #33CCCC;
+	font-family: "幼圆";
+	font-weight: bold;
+	font-size: 20px;
+	color: #FFC;
 }

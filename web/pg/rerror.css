@@ -5,19 +5,19 @@
 	background-color: #3C9;
 	display: inline-block;
 	position: absolute;
-	height: 921px;
-	width: 1300px;
-	left: 125px;
+	height: 700px;
+	width: 1340px;
+	left: 0px;
 	top: 0px;
 }
 #divPERSABY {
 	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
-	height: 570px;
-	width: 1000px;
-	left: 150px;
-	top: 130px;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 100px;
 }
 #labPERSAP {
 	font-family: "幼圆";
@@ -69,8 +69,8 @@
 	position: absolute;
 	height: 50px;
 	width: 410px;
-	left: 300px;
-	top: 130px;
+	left: 365px;
+	top: 80px;
 }
 #labPERSAR {
 	font-family: "Arial Unicode MS";
@@ -82,8 +82,8 @@
 	position: absolute;
 	height: 100px;
 	width: 400px;
-	left: 300px;
-	top: 250px;
+	left: 370px;
+	top: 150px;
 }
 #btnerclick {
 	font-family: "Arial Unicode MS";
@@ -95,8 +95,8 @@
 	position: absolute;
 	height: 50px;
 	width: 400px;
-	left: 300px;
-	top: 370px;
+	left: 370px;
+	top: 270px;
 }
 #btnPERMANe {
 	font-family: "Arial Unicode MS";
@@ -107,8 +107,8 @@
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 564px;
-	top: 470px;
+	left: 750px;
+	top: 420px;
 	font-weight: bold;
 }
 #btnPERMAB {
@@ -121,6 +121,6 @@
 	position: absolute;
 	height: 50px;
 	width: 160px;
-	left: 765px;
-	top: 470px;
+	left: 950px;
+	top: 420px;
 }

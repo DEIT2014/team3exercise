@@ -96,3 +96,28 @@
 	left: 0px;
 	top: 0px;
 }
+#prPass {
+	font-family: "幼圆";
+	font-size: 13px;
+	color: #600;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 63px;
+	width: 100px;
+	top: 336px;
+	left:1207px;
+}
+#prUser {
+	font-family: "幼圆";
+	font-size: 13px;
+	color: #600;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 63px;
+	width: 100px;
+	top: 193px;
+	left:1207px;
+}
+}

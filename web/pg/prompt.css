@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+#divPrompt {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 700px;
+	width: 1340px;
+	left: 0px;
+	top: 0px;
+}
+#proChar {
+	font-family: "幼圆";
+	font-size: 36px;
+	color: #600;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 40px;
+	width: 260px;
+	left: 470px;
+	top: 315px;
+}
+#proLast {
+	font-family: "幼圆";
+	font-size: 28px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 950px;
+	top: 620px;
+}
+#proMain {
+	font-family: "幼圆";
+	font-size: 28px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3C9;
+	display: run-in;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 1150px;
+	top: 620px;
+}

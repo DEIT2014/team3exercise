@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* CSS Document */
+
+h2 {
+border-top: solid cornflowerblue 1px;
+border-left: solid cornflowerblue 1px;
+width: 50px;
+height: 25px;
+margin: 0;
+float: left;
+text-align: center;
+}
+.tab-content {
+border: solid cornflowerblue 1px;
+width: 152px;
+height: 100px;
+}
+.tab-content div{
+display: none;
+}
+.btnPWA {
+	background-color: #3C9;
+	font-family: "幼圆";
+	font-weight: bold;
+	display: inline-block;
+	position: absolute;
+	height: 70px;
+	width: 250px;
+	left: 0;
+	top: 0;
+}
+.tab-content .show{
+	display: inline-block;
+	background-color: #3C9;
+	position: absolute;
+	height: 630px;
+	width: 1340px;
+	left: 0px;
+	top: 70px;
+}
+.btnPWN {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 70px;
+	width: 250px;
+	left: 250px;
+	top: 0px;
+}
+.slan {
+	font-family: "幼圆";
+	font-size: 28px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	width: 80px;
+	height: 30px;
+}
+#slan {
+	left: 85px;
+	top: 20px;
+	position: absolute;
+}
+#uslan {
+	left: 85px;
+	top: 20px;
+	position: absolute;
+}
+#btnPWA {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#btnPWN {
+	position: absolute;
+	left: 250px;
+	top: 0px;
+}
+
+
+.uslan {
+	font-family: "幼圆";
+	font-size: 28px;
+	font-weight: bold;
+	color: #3C9;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 30px;
+	width: 80px;
+}
+#panPWS {
+	display: inline-block;
+	position: absolute;
+	height: 700px;
+	width: 1340px;
+	left: 0px;
+	top: 0px;
+}
+.tab-content .divPWSABY {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 65px;
+}
+ .tab-content .divPWSABY .labPWAP {
+	font-family: "幼圆";
+	font-size: 30px;
+	font-weight: bold;
+	color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 35px;
+	width: 660px;
+	top: 70px;
+	left: 240px;
+}
+.tab-content .divPWSABY .labPWSNR.ref2 {
+	font-family: "Arial Unicode MS";
+	font-size: 80px;
+	font-weight: bold;
+	color: #600;
+	display: inline-block;
+	position: absolute;
+	height: 80px;
+	width: 180px;
+	left: 410px;
+	top: 135px;
+	text-align: center;
+}
+.tab-content .divPWSABY .labPWSAR {
+	font-family: "Arial Unicode MS";
+	font-size: 80px;
+	font-weight: bold;
+	color: #600;
+	display: inline-block;
+	position: absolute;
+	height: 80px;
+	width: 180px;
+	left: 410px;
+	top: 135px;
+	text-align: center;
+}
+.tab-content .divPWSABY .labPWSARr {
+	font-family: "Arial Unicode MS";
+	font-size: 80px;
+	font-weight: bold;
+	color: #600;
+	display: inline-block;
+	position: absolute;
+	height: 80px;
+	width: 180px;
+	left: 410px;
+	top: 135px;
+	text-align: center;
+}
+.tab-content .textPWSA {
+	font-family: "Arial Unicode MS";
+	font-size: 15px;
+	color: #000;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 660px;
+	left: 240px;
+	top: 270px;
+}
+.tab-content .textPWSN {
+	font-family: "Arial Unicode MS";
+	font-size: 15px;
+	color: #000;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 660px;
+	left: 240px;
+	top: 270px;
+}
+
+.tab-content .divPWSABY .btnPWSAN {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 750px;
+	top: 420px;
+	background-color: #33CC99;
+	color: #FFC;
+	font-size: 20px;
+	font-weight: bold;
+}
+.tab-content .divPWSABY .btnPWSNN {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 750px;
+	top: 420px;
+	background-color: #33CC99;
+	color: #FFC;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+.tab-content .divPWSABY .btnPWSAB {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 950px;
+	top: 420px;
+	background-color: #33CC99;
+	color: #FFC;
+	font-size: 20px;
+	font-weight: bold;
+}
+.tab-content .divPWSABY .btnSUBMIT {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 540px;
+	top: 420px;
+	background-color: #33CC99;
+	color: #FFC;
+	font-size: 20px;
+	font-weight: bold;
+}
+.tab-content .divPWSABY .btnPWSNB {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 950px;
+	top: 420px;
+	background-color: #33CC99;
+	color: #FFC;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.tab-content .labPWSAS {
+	font-family: "幼圆";
+	font-size: 36px;
+	font-weight: bold;
+	color: #600;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 250px;
+	left: 15px;
+	top: 15px;
+}

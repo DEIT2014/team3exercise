@@ -11,6 +11,9 @@ import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_cors/shelf_cors.dart' as shelf_cors;
 import 'package:shelf_route/shelf_route.dart';
 import 'dart:math';
+import 'package:pg/src/word_class.dart';
+import 'package:json_object/json_object.dart';
+import 'package:jsonx/jsonx.dart';
 
 /*
 *这个案例显示如何综合使用shelf pipeline，middleware和handle；
@@ -18,6 +21,9 @@ import 'dart:math';
 *如何连接数据库及查询数据；
 *如何转换json数据
 */
+
+wordtype w = decode('{ "type0": "word", "word0": "e", "time0": "00" }', type: wordtype);
+String stuJson=encode(w);
 
 
 Map<String, String> type = new Map();
@@ -51,8 +57,11 @@ main(List<String> args) async {
   corsHeader['Access-Control-Allow-Headers'] =
   'Origin, X-Requested-With, Content-Type, Accept';
 
-  myRouter.get('/', _echoUserName);
-  myRouter.post('/rest', _echoRequest);
+  myRouter.get('/quest1', _echoUserName1);
+  myRouter.get('/quest2', _echoUserName2);
+  myRouter.get('/quest3', _echoUserName3);
+  myRouter.post('/geterr', _echoRequest);
+  myRouter.get('/posterr', _echoerrdata);
   //配置cors参数
   var routerHandler = myRouter.handler;
   //配置shelf中间件和路由handle
@@ -69,16 +78,77 @@ main(List<String> args) async {
 }
 
 
-Future<shelf.Response> _echoUserName(shelf.Request request) async {
+Future<shelf.Response> _echoUserName1(shelf.Request request) async {
   //从数据库获取数据
-  String t = await getDataFromDb();
+  String s='letter';
+  String t = await getDataFromDb(s);
+
+  //把这个post过来的数据有返回给客户端
+  return new shelf.Response.ok(
+      '$t');
+}
+Future<shelf.Response> _echoUserName2(shelf.Request request) async {
+  //从数据库获取数据
+  String s='number';
+  String t = await getDataFromDb(s);
+
+  //把这个post过来的数据有返回给客户端
+  return new shelf.Response.ok(
+      '$t');
+}
+Future<shelf.Response> _echoUserName3(shelf.Request request) async {
+  //从数据库获取数据
+  String s='shorts';
+  String t = await getDataFromDb3(s);
+
+  //把这个post过来的数据有返回给客户端
+  return new shelf.Response.ok(
+      '$t');
+}
+Future<String> getDataFromDb3(String s) async{
+  String ss="select * from duizhao where type=\'$s\'";
+  var results = await pool.query(ss);
+  int i = 0;
+  results.forEach((row) {
+    //列出所有用户
+    String index = i.toString();
+    word[index] = row.word;
+    time[index]= row.time;
+    i++;
+  });
+  var Randomvar= new Random();
+  int n=Randomvar.nextInt(10);
+  String jsonData=word['$n']+" "+ time['$n'];
+  //String jsonData = JSON.encode(word['$n'] +" "+ time['$n']);
+  return jsonData;
+}
+Future<shelf.Response> _echoerrdata(shelf.Request request) async {
+  //从数据库获取数据
+  String t = await geterrDataFromDb();
+
   //把这个post过来的数据有返回给客户端
   return new shelf.Response.ok(
       '$t');
 }
 
-Future<String> getDataFromDb() async {
-  var results = await pool.query('select * from duizhao');
+
+Future<String> geterrDataFromDb() async {
+  String ss="select word from duizhao where type=\'letter\' and correct=\'F\'";
+  var results = await pool.query(ss);
+  int i = 1;
+  String jsonData1,jsonData2='';
+  await results.forEach((row) {
+    //列出所有用户
+    String index = i.toString();
+    jsonData1=jsonData2+index+'. '+row.word+'\\\\n';
+    jsonData2=jsonData1;
+    i++;
+  });
+  return jsonData1;
+}
+Future<String> getDataFromDb(String s) async {
+  String ss="select * from duizhao where type=\'$s\'";
+  var results = await pool.query(ss);
   int i = 0;
   results.forEach((row) {
     //列出所有用户
@@ -88,7 +158,7 @@ Future<String> getDataFromDb() async {
     i++;
   });
 var Randomvar= new Random();
-int n=Randomvar.nextInt(12);
+int n=Randomvar.nextInt(10);
   String jsonData=word['$n']+" "+ time['$n'];
  //String jsonData = JSON.encode(word['$n'] +" "+ time['$n']);
   return jsonData;
@@ -96,8 +166,23 @@ int n=Randomvar.nextInt(12);
 
 Future<shelf.Response> _echoRequest(shelf.Request request) async {
   //接受post过来的数据
-  String content = await request.readAsString();
+  String s=await request.readAsString();
+  List<String> dataList=s.split(" ");
+ String wordy= dataList[0];
+  String corr=dataList[1];
+  print(wordy);
+  String content =await changeDataFromDb(wordy,corr);
   //把这个post过来的数据有返回给客户端
+
   return new shelf.Response.ok(
-      'server susscefullly get the post data from client is: "${content}');
+      '2server susscefullly get the post data from client is: "${content}');
+}
+
+Future<String> changeDataFromDb(String wordy,String corr) async {
+  var results;
+  if(corr=='T')
+    results = await pool.query('UPDATE duizhao SET correct = \'T\' WHERE word= \'${wordy}\'');
+  else
+    results = await pool.query('UPDATE duizhao SET correct = \'F\' WHERE word= \'${wordy}\'');
+  return 'OK';
 }

@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* CSS Document */
+
+h2 {
+border-top: solid cornflowerblue 1px;
+border-left: solid cornflowerblue 1px;
+width: 50px;
+height: 25px;
+margin: 0;
+float: left;
+text-align: center;
+}
+.tab-content {
+border: solid cornflowerblue 1px;
+width: 152px;
+height: 100px;
+}
+.tab-content div{
+display: none;
+}
+.selected {
+	background-color: #3C9;
+	position: absolute;
+	height: 70px;
+	width: 250px;
+	color: #3C9;
+}
+#btnPWMAA {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#btnPWMAN {
+	position: absolute;
+	left: 250px;
+	top: 0px;
+}
+#btnPWMAM {
+	position: absolute;
+	left: 500px;
+	top: 0px;
+}
+
+.unselected {
+	background-color: #FFC;
+	position: absolute;
+	height: 70px;
+	width: 250px;
+	color: #FFC;
+}
+
+
+.tab-content .show{
+	display: inline-block;
+	background-color: #3C9;
+	position: absolute;
+	height: 630px;
+	width: 1340px;
+	left: 0px;
+	top: 70px;
+	color: #3C9;
+}
+.tab-content .divPWMAB {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 65px;
+}
+.tab-content .labPWMAC {
+	font-family: "幼圆";
+	font-size: 30px;
+	font-weight: bold;
+	color: #3C9;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 35px;
+	width: 660px;
+	left: 240px;
+	top: 70px;
+}
+.tab-content .labPWMAR {
+	font-family: "幼圆";
+	font-size: 72px;
+	font-weight: bold;
+	color: #600;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 80px;
+	width: 180px;
+	left: 480px;
+	top: 135px;
+}
+.textPWMAA {
+	font-family: "Arial Unicode MS";
+	font-size: 15px;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 660px;
+	left: 240px;
+	top: 270px;
+}
+.tab-content .divPWMNB {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 65px;
+}
+.tab-content .labPWMNC {
+	font-family: "幼圆";
+	font-size: 30px;
+	font-weight: bold;
+	color: #3C9;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 35px;
+	width: 660px;
+	left: 240px;
+	top: 70px;
+}
+.tab-content .labPWMNR {
+	font-family: "幼圆";
+	font-size: 72px;
+	font-weight: bold;
+	color: #600;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 80px;
+	width: 180px;
+	left: 480px;
+	top: 135px;
+}
+.textPWMNA {
+	font-family: "Arial Unicode MS";
+	font-size: 15px;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 660px;
+	left: 240px;
+	top: 270px;
+}
+
+.textPWMMA {
+	font-family: "Arial Unicode MS";
+	font-size: 15px;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 660px;
+	left: 240px;
+	top: 270px;
+}
+.tab-content .divPWMMB {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 500px;
+	width: 1140px;
+	left: 100px;
+	top: 65px;
+}
+.tab-content .labPWMMC {
+	font-family: "幼圆";
+	font-size: 30px;
+	font-weight: bold;
+	color: #3C9;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 35px;
+	width: 660px;
+	left: 240px;
+	top: 70px;
+}
+.tab-content .labPWMMR {
+	font-family: "幼圆";
+	font-size: 72px;
+	font-weight: bold;
+	color: #600;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 80px;
+	width: 180px;
+	left: 480px;
+	top: 135px;
+}
+.tab-content .labPWMMP {
+	font-family: "幼圆";
+	font-size: 36px;
+	font-weight: bold;
+	color: #600;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 250px;
+	left: 15px;
+	top: 15px;
+}
+.tab-content .btnPWMMNe{
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 750px;
+	top: 420px;
+	background-color: #33CC99;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+}
+.tab-content .btnPWMMB {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 950px;
+	top: 420px;
+	background-color: #33CC99;
+	color: #FFC;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+.tab-content .btnPWMANe{
+	display: inline-block;
+	position: absolute;
+	left: 750px;
+	top: 420px;
+	background-color: #33CC99;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+	font-family: "Arial Unicode MS";
+	height: 50px;
+	width: 160px;
+}
+.tab-content .btnPWMAB {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 950px;
+	top: 420px;
+	background-color: #33CC99;
+	color: #FFC;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: "Arial Unicode MS";
+}
+.tab-content .btnPWMNNe{
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 750px;
+	top: 420px;
+	background-color: #33CC99;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+}
+.tab-content .btnPWMNB {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 950px;
+	top: 420px;
+	background-color: #3C9;
+	color: #FFC;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+#panPWM {
+	display: inline-block;
+	height: 700px;
+	width: 1340px;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+}
+
+
+
+
+
+
+#labPWMAA {
+	position: absolute;
+	left: 85px;
+	top: 20px;
+}
+.labPWMAA {
+	font-family: "幼圆";
+	font-size: 28px;
+	font-weight: bold;
+	color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 30px;
+	width: 80px;
+}
+
+#labPWMAN {
+	display: inline-block;
+	position: absolute;
+	left: 85px;
+	top: 20px;
+}
+.labPWMAN {
+	font-family: "幼圆";
+	font-size: 28px;
+	font-weight: bold;
+	color: #3C9;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 30px;
+	width: 80px;
+}
+#labPWMAM {
+	display: inline-block;
+	position: absolute;
+	left: 85px;
+	top: 20px;
+}
+.labPWMAM {
+	font-family: "幼圆";
+	font-size: 28px;
+	font-weight: bold;
+	color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 30px;
+	width: 80px;
+}
+.tab-content .labPWMAP {
+	font-family: "幼圆";
+	font-size: 36px;
+	font-weight: bold;
+	color: #600;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 250px;
+	left: 15px;
+	top: 15px;
+}
+.tab-content .labPWMNP {
+	font-family: "幼圆";
+	font-size: 36px;
+	font-weight: bold;
+	color: #600;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 250px;
+	left: 15px;
+	top: 15px;
+	background-color: #3C9;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+  <title>单个字符训练-读报</title>
+
+  <script defer type="application/dart" src="main.dart"></script>
+  <script defer src="packages/browser/dart.js"></script>
+
+  <!-- example of using a paper element -->
+
+
+  <link href="sread.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div id="panPRS">
+<div class="tab-head">
+<h2 class="selected" id="btnPRSNA" onclick="changeTab1()" name="btnPRSNA"><div id="slan" onclick="changeTab1()" class="slan">字母</div></h2>
+
+<h2 id="btnPRSNN" onclick="changeTab2()" class="unselected"><div id="uslan" onclick="changeTab2()" class="uslan">数字</div></h2>
+
+</div>
+<div class="tab-content">
+<div id="panPRS1" class="show">
+<div id="labPRSAS" class="labPRSAS">开始练习吧：</div>
+  <div id="divPRSABY" class="divPRSABY">
+    <div id="labPRSAC" class="labPRSAC">请通过点击鼠标左键输入信号</div>
+    <div id="labPRSAR" class="labPRSAR"></div>
+    <button name="btnPRSANe" class="btnPRSANe" id="btnPRSANe">next</button>
+    <a href="mread.html"><button name="btnPRSAB" class="btnPRSAB" id="btnPRSAB">back</button></a>
+    <button name="btnclick1" class="btnclick" id="btnclick1">click me</button>
+  </div>
+</div>
+<div id="panPRS2">
+<div id="labPRSAS" class="labPRSAS">开始练习吧：</div>
+  <div id="divPRSABY" class="divPRSABY">
+    <div id="labPRSAC" class="labPRSAC">请通过点击鼠标左键输入信号</div>
+    <div id="labPRSNR" class="labPRSNR"></div>
+    <button id="btnPRSANe2" class="btnPRSANe">next</button>
+     <a href="mread.html"><button id="btnPRSAB" class="btnPRSAB">back</button></a>
+     <button id="btnclick2" class="btnclick">click me</button>
+  </div></div>
+
+</div>
+</div>
+<script>
+var tab1 = document.getElementById('btnPRSNA');
+ltab1=document.getElementById('slan');
+tab2 = document.getElementById('btnPRSNN');
+ltab2=document.getElementById('uslan');
+c1 = document.getElementById('panPRS1');
+divPRSABY=document.getElementById('divPRSABY');
+labPRSAC=document.getElementById('labPRSAC');
+labPRSAR=document.getElementById('labPRSAR');
+labPRSNR=document.getElementById('labPRSNR');
+btnPRSANe=document.getElementById('btnPRSANe');
+btnPRSAB=document.getElementById('btnPRSAB');
+btnPRSNNe=document.getElementById('btnPRSNNe');
+btnPRSNB=document.getElementById('btnPRSNB');
+labPRSAS=document.getElementById('labPRSAS');
+btnclick=document.getElementById('btnclick');
+c2 = document.getElementById('panPRS2');
+
+function changeTab1() {
+tab1.className = 'selected';
+ltab1.className='slan';
+tab2.className = 'unselected';
+ltab2.className='uslan';
+c1.className = 'show';
+divPRSABY.className='divPRSABY';
+labPRSAC.className='labPRSAC';
+labPRSAR.className='labPRSAR';
+btnPRSANe.className='btnPRSANe';
+btnPRSAB.className='btnPRSAB';
+labPRSAS.className='labPRSAS';
+btnclick.className='btnclick';
+c2.className = '';
+}
+function changeTab2() {
+tab1.className = 'unselected';
+ltab1.className='uslan';
+tab2.className = 'selected';
+ltab2.className='slan';
+c1.className = '';
+c2.className = 'show';
+divPRSABY.className='divPRSABY';
+labPRSAC.className='labPRSAC';
+labPRSNR.className='labPRSNR';
+btnPRSNNe.className='btnPRSNNe';
+btnPRSNB.className='btnPRSNB';
+labPRSAS.className='labPRSAS';
+btnclick.className='btnclick';
+
+}
+
+</script>
+
+</body>
+</html>

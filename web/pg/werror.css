@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+#panPEWM {
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 921px;
+	width: 1300px;
+	left: 125px;
+	top: 0px;
+}
+#labPEWMAP {
+	font-family: "幼圆";
+	font-size: 30px;
+	font-weight: bold;
+	color: #600;
+	background-color: #33CC99;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 250px;
+	left: 50px;
+	top: 50px;
+}
+#divPEWMABY {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 570px;
+	width: 1000px;
+	left: 150px;
+	top: 130px;
+}
+#labPEWMAC {
+	font-family: "幼圆";
+	font-size: 30px;
+	font-weight: bold;
+	color: #3C9;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 35px;
+	width: 660px;
+	left: 180px;
+	top: 70px;
+}
+#labPEWMAR {
+	font-family: "Arial Unicode MS";
+	font-size: 72px;
+	font-weight: bold;
+	color: #600;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 100px;
+	width: 400px;
+	left: 320px;
+	top: 135px;
+}
+#textPEWMAA {
+	font-family: "Arial Unicode MS";
+	font-size: 15px;
+	color: #000;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 660px;
+	left: 170px;
+	top: 270px;
+}
+#btnPEWMANe {
+	font-family: "Arial Unicode MS";
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 564px;
+	top: 470px;
+}
+#btnPEWMAB {
+	font-family: "Arial Unicode MS";
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 764px;
+	top: 470px;
+}

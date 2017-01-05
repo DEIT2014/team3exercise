@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+  <title>单个字符训练-抄报</title>
+
+  <script defer type="application/dart" src="swrite.dart"></script>
+<link href="swrite.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="panPWS">
+<div class="tab-head">
+<h2 class="btnPWA" id="btnPWA" onclick="changeTab1()" name="btnPRSNA"><div id="slan" onclick="changeTab1()" class="slan">字母</div></h2>
+
+<h2 id="btnPWN" onclick="changeTab2()" class="btnPWN"><div id="uslan" onclick="changeTab2()" class="uslan">数字</div></h2>
+</div>
+
+<!--内容-->
+<div class="tab-content">
+<div id="panPWS1" class="show">
+  <div id="labPWSAS" class="labPWSAS">开始练习吧：</div>
+  <div id="divPWSABY" class="divPWSABY">
+    <div id="labPWAP" class="labPWAP">请翻译如下摩尔斯电码，将结果输入文本框中：</div>
+    <div id="labPWSAR" class="labPWSAR"></div>
+    <div id="ref1" class="ref2"></div>
+    <input name="textPWSA" type="text" class="textPWSA" id="textPWSA" />
+    <button id="btnSUBMIT" class="btnSUBMIT">submit</button>
+    <button id="btnPWSAN" class="btnPWSAN">next</button>
+    <a href="mwrite.html"><button name="btnPWSAB" class="btnPWSAB" id="btnPWSAB">back</button></a>
+    
+  </div>
+</div>
+<div id="panPWS2">
+  <div id="labPWSAS" class="labPWSAS">开始练习吧：</div>
+  <div id="divPWSABY" class="divPWSABY">
+    <div id="labPWAP" class="labPWAP">请翻译如下摩尔斯电码，将结果输入文本框中：</div>
+    <div id="labPWSNR" class="labPWSNR"></div>
+    <div id="ref2" class="ref2"></div>
+    <input name="textPWSN" type="text" class="textPWSN" id="textPWSN" />
+    <button id="btnSUBMIT" class="btnSUBMIT">submit</button>
+    <button id="btnPWSNN" class="btnPWSNN">next</button>
+    <a href="mwrite.html"><button id="btnPWSNB" class="btnPWSNB">back</button></a>
+  </div>
+</div>
+</div>
+</div>
+<script>
+var tab1 = document.getElementById('btnPWA');
+ltab1=document.getElementById('slan');
+tab2 = document.getElementById('btnPWN');
+ltab2=document.getElementById('uslan');
+c1 = document.getElementById('panPWS1');
+divPWSABY=document.getElementById('divPWSABY');
+labPWAP=document.getElementById('labPWAP');
+labPWSAR=document.getElementById('labPWSAR');
+btnPWSAN=document.getElementById('btnPWSAN');
+btnPWSAB=document.getElementById('btnPWSAB');
+labPWSNR=document.getElementById('labPWSNR');
+btnPWSNN=document.getElementById('btnPWSNN');
+btnPWSNB=document.getElementById('btnPWSNB');
+labPWSAS=document.getElementById('labPWSAS');
+c2 = document.getElementById('panPWS2');
+labPWSNR=document.getElementById('labPWSNR');
+
+function changeTab1() {
+tab1.className = 'btnPWA';
+ltab1.className='slan';
+tab2.className = 'btnPWN';
+ltab2.className='uslan';
+c1.className = 'show';
+divPWSABY.className='divPWSABY';
+labPWAP.className='labPWAP';
+labPWSAR.className='labPWSAR';
+btnPWSAN.className='btnPWSAN';
+btnPWSAB.className='btnPWSAB';
+labPWSAS.className='labPWSAS';
+c2.className = '';
+}
+function changeTab2() {
+tab1.className = 'btnPWN';
+ltab1.className='uslan';
+tab2.className = 'btnPWA';
+ltab2.className='slan';
+c1.className = '';
+c2.className = 'show';
+divPWSABY.className='divPRSABY';
+labPWAP.className='labPWAP';
+labPWSNR.className='labPWSNR';
+btnPWSNN.className='btnPWSNN';
+btnPWSNB.className='btnPWSNB';
+labPWSAS.className='labPWSAS';
+
+}
+
+</script>
+
+</body>
+</html>

@@ -131,6 +131,7 @@ display: none;
 	width: 200px;
 	left: 470px;
 	top: 210px;
+	text-align:center
 }
 .tab-content .divPRSABY .labPRSNR {
 	font-family: "Arial Unicode MS";
@@ -143,6 +144,7 @@ display: none;
 	width: 200px;
 	left: 470px;
 	top: 210px;
+	text-align:center
 }
 
 .tab-content .divPRSABY .btnPRSANe {
@@ -219,3 +221,4 @@ display: none;
 	left: 470px;
 	top: 340px;
 }
+

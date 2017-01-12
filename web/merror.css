@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+#divEr {
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 700px;
+	width: 1340px;
+	top: 0px;
+}
+#btnERe {
+	font-family: "幼圆";
+	font-size: 72px;
+	font-weight: bold;
+	color: #600;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 200px;
+	width: 350px;
+	left: 250px;
+	top: 200px;
+}
+#btnEWr {
+	font-family: "幼圆";
+	font-size: 72px;
+	font-weight: bold;
+	color: #600;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 200px;
+	width: 350px;
+	left: 700px;
+	top: 200px;
+}
+#btnRMa {
+	font-family: "幼圆";
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3CC;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 1000px;
+	top: 550px;
+}

@@ -1,21 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
 
-#panPEWM {
+#panPERS {
 	background-color: #3C9;
+	position: absolute;
+	height: 700px;
+	width: 1340px;
+}
+#divPERSABY {
+	background-color: #FFC;
 	display: inline-block;
 	position: absolute;
-	height: 921px;
-	width: 1300px;
-	left: 125px;
-	top: 0px;
+	height: 500px;
+	width: 1000px;
+	left: 150px;
+	top: 100px;
 }
-#labPEWMAP {
+#labPERSAP {
 	font-family: "幼圆";
-	font-size: 30px;
+	font-size: 36px;
 	font-weight: bold;
 	color: #600;
-	background-color: #33CC99;
+	background-color: #3C9;
 	display: inline-block;
 	position: absolute;
 	height: 50px;
@@ -23,67 +29,21 @@
 	left: 50px;
 	top: 50px;
 }
-#divPEWMABY {
-	background-color: #FFC;
-	display: inline-block;
-	position: absolute;
-	height: 570px;
-	width: 1000px;
-	left: 150px;
-	top: 130px;
-}
-#labPEWMAC {
+#labPERSAP {
 	font-family: "幼圆";
 	font-size: 30px;
 	font-weight: bold;
-	color: #3C9;
-	background-color: #FFC;
-	display: inline-block;
-	position: absolute;
-	height: 35px;
-	width: 660px;
-	left: 180px;
-	top: 70px;
-}
-#labPEWMAR {
-	font-family: "Arial Unicode MS";
-	font-size: 72px;
-	font-weight: bold;
 	color: #600;
-	background-color: #FFC;
-	display: inline-block;
-	position: absolute;
-	height: 100px;
-	width: 400px;
-	left: 320px;
-	top: 135px;
-}
-#textPEWMAA {
-	font-family: "Arial Unicode MS";
-	font-size: 15px;
-	color: #000;
-	display: inline-block;
-	position: absolute;
-	height: 50px;
-	width: 660px;
-	left: 170px;
-	top: 270px;
-}
-#btnPEWMANe {
-	font-family: "Arial Unicode MS";
-	font-size: 20px;
-	font-weight: bold;
-	color: #FFC;
 	background-color: #3C9;
 	display: inline-block;
 	position: absolute;
 	height: 50px;
-	width: 160px;
-	left: 564px;
-	top: 470px;
+	width: 250px;
+	left: 50px;
+	top: 50px;
 }
-#btnPEWMAB {
-	font-family: "Arial Unicode MS";
+#btnPERMAB {
+	font-family: "幼圆";
 	font-size: 20px;
 	font-weight: bold;
 	color: #FFC;
@@ -93,5 +53,71 @@
 	height: 50px;
 	width: 160px;
 	left: 764px;
-	top: 470px;
+	top: 420px;
+}
+
+#labPERSAC {
+	font-family: "幼圆";
+	font-size: 30px;
+	font-weight: bold;
+	color: #3C9;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 410px;
+	left: 300px;
+	top: 70px;
+}
+#labPERSAR {
+	font-family: "Arial Unicode MS";
+	font-size: 80px;
+	font-weight: bold;
+	color: #600;
+	background-color: #FFC;
+	display: inline-block;
+	position: absolute;
+	height: 100px;
+	width: 400px;
+	left: 300px;
+	top: 200px;
+}
+#btnerclick {
+	font-family: "Arial Unicode MS";
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3CC;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 400px;
+	left: 300px;
+	top: 270px;
+}
+#btnPERMANe {
+	font-family: "Arial Unicode MS";
+	font-size: 20px;
+	color: #FFC;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 564px;
+	top: 420px;
+	font-weight: bold;
+}
+#btnPERMAB {
+	font-family: "Arial Unicode MS";
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFC;
+	background-color: #3C9;
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 765px;
+	top: 420px;
 }

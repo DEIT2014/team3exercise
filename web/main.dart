@@ -4,30 +4,51 @@
 import "dart:html";
 import 'dart:math';
 
-HttpRequest request;
+
+
+HttpRequest request1,request2;
 List<int> t1 = new List(5);
 List<int> t2 = new List(5);
 List<int> T2 = new List(5);
 List<String> dataList;
-String datalist;
+String datalist,wordy,corr,cho='letter';
 int clicknumber=-1,nowclick=0;
 int longt=3500,num=2500,shortt=1500;
 
 
 void main(){
-  querySelector("#btnPRLB").onClick.listen(click1);
-  querySelector("#btnCLICK")
+  querySelector("#btnPRSANe").onClick.listen(click1);
+  querySelector("#btnPRSANe2").onClick.listen(click2);
+  querySelector("#btnclick1")
+    ..onMouseDown.listen(onText1)
+    ..onMouseUp.listen(onText2);
+  querySelector("#btnclick2")
     ..onMouseDown.listen(onText1)
     ..onMouseUp.listen(onText2);
 
+
 }
+
+
 void click1(MouseEvent e){
-  querySelector("#btnCLICK").text="点我测试";
-  String url = 'http://localhost:8080';
-  request = new HttpRequest();
-  request.onReadyStateChange.listen(onData);
-  request.open('GET', url);
-  request.send(" your jsonndata");
+  cho='letter';
+  querySelector("#btnclick1").text="click me";
+  String url = 'http://localhost:8080/quest1';
+  request1 = new HttpRequest();
+  request1.onReadyStateChange.listen(onData);
+  request1.open('GET', url);
+  request1.send(cho);
+
+}
+
+void click2(MouseEvent e){
+  cho='number';
+  querySelector("#btnclick2").text="click me";
+  String url = 'http://localhost:8080/quest2';
+  request1 = new HttpRequest();
+  request1.onReadyStateChange.listen(onDatab);
+  request1.open('GET', url);
+  request1.send(cho);
 }
 
 void onText1(MouseEvent event) {
@@ -38,6 +59,7 @@ void onText2(MouseEvent event) {
   nowclick++;
   if(clicknumber==nowclick-1){
     String value='';
+    nowclick=0;
     for(int i=0;i<=clicknumber;i++)
     {
       if(t2[i]<shortt)
@@ -47,19 +69,50 @@ void onText2(MouseEvent event) {
       else
         value=value+'2';
     }
-    if(value==datalist)
-      querySelector("#btnCLICK").text="you win!";
+    if(value==datalist){
+      corr= wordy + " "+ 'T';
+      changevalue();
+      querySelector("#btnclick1").text="you win!";
+      querySelector("#btnclick2").text="you win!";
+    }
+
     else
-      querySelector("#btnCLICK").text="you lose!";
+    {corr=wordy + " "+ 'F';
+    changevalue();
+    querySelector("#btnclick1").text="you lose!";
+    querySelector("#btnclick2").text="you lose!";}
+    clicknumber=-1;
+
   }
 }
 
 void onData(_) {
-  if (request.readyState == HttpRequest.DONE && request.status == 200) {
-    String jsonData=request.responseText;
+  if (request1.readyState == HttpRequest.DONE && request1.status == 200) {
+    String jsonData=request1.responseText;
     List<String> dataList=jsonData.split(" ");
     clicknumber= dataList[1].length-1;
     datalist=dataList[1];
-    querySelector("#QUES").text= dataList[0];
+    wordy=dataList[0];
+    querySelector("#labPRSAR").text= dataList[0];
   }
 }
+void onDatab(_) {
+  if (request1.readyState == HttpRequest.DONE && request1.status == 200) {
+    String jsonData=request1.responseText;
+    List<String> dataList=jsonData.split(" ");
+    clicknumber= dataList[1].length-1;
+    datalist=dataList[1];
+    wordy=dataList[0];
+    querySelector("#labPWSAR").text= dataList[0];
+  }
+}
+void changevalue()
+{String url = 'http://localhost:8080/geterr';
+request2 = new HttpRequest();
+request2.onReadyStateChange.listen(onData2);
+request2.open('POST', url);
+request2.send(corr);}
+
+
+void onData2(_)
+{}

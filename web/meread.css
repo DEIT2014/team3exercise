@@ -94,6 +94,7 @@ display: none;
 	width: 400px;
 	left: 365px;
 	top: 210px;
+	text-align: center;
 }
 .tab-content .btnPRMANe {
 	display: inline-block;

@@ -120,7 +120,7 @@ display: none;
 	top: 70px;
 	left: 240px;
 }
-.tab-content .divPWSABY .labPWSNR {
+.tab-content .divPWSABY .labPWSNR.ref2 {
 	font-family: "Arial Unicode MS";
 	font-size: 80px;
 	font-weight: bold;
@@ -129,8 +129,9 @@ display: none;
 	position: absolute;
 	height: 80px;
 	width: 180px;
-	left: 480px;
+	left: 410px;
 	top: 135px;
+	text-align: center;
 }
 .tab-content .divPWSABY .labPWSAR {
 	font-family: "Arial Unicode MS";
@@ -143,6 +144,20 @@ display: none;
 	width: 180px;
 	left: 410px;
 	top: 135px;
+	text-align: center;
+}
+.tab-content .divPWSABY .labPWSARr {
+	font-family: "Arial Unicode MS";
+	font-size: 80px;
+	font-weight: bold;
+	color: #600;
+	display: inline-block;
+	position: absolute;
+	height: 80px;
+	width: 180px;
+	left: 410px;
+	top: 135px;
+	text-align: center;
 }
 .tab-content .textPWSA {
 	font-family: "Arial Unicode MS";
@@ -192,12 +207,25 @@ display: none;
 	font-weight: bold;
 }
 
+
 .tab-content .divPWSABY .btnPWSAB {
 	display: inline-block;
 	position: absolute;
 	height: 50px;
 	width: 160px;
 	left: 950px;
+	top: 420px;
+	background-color: #33CC99;
+	color: #FFC;
+	font-size: 20px;
+	font-weight: bold;
+}
+.tab-content .divPWSABY .btnSUBMIT {
+	display: inline-block;
+	position: absolute;
+	height: 50px;
+	width: 160px;
+	left: 540px;
 	top: 420px;
 	background-color: #33CC99;
 	color: #FFC;
